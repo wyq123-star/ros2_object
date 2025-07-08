@@ -1,0 +1,7 @@
+{
+  "python.analysis.extraPaths": [
+    "/opt/ros/humble/lib/python3.10/site-packages"
+  ],
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.defaultInterpreterPath": "/usr/bin/python3"
+}

@@ -31,5 +31,11 @@ RUN echo "source $ROS_SETUP_BASH" >> /home/$USERNAME/.bashrc
 USER $USERNAME
 WORKDIR /home/$USERNAME
 
+RUN fish -c 'curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher && fisher install edc/bass' && \
+    mkdir -p /home/$USERNAME/.config/fish && \
+    echo 'bass source /opt/ros/humble/setup.bash' >> /home/$USERNAME/.config/fish/config.fish && \
+    echo 'bass source ~/ros2_ws/install/setup.bash' >> /home/$USERNAME/.config/fish/config.fish && \
+    chown -R $USERNAME:$USERNAME /home/$USERNAME/.config/fish
+
 # 默认入口
 CMD ["/bin/bash"]

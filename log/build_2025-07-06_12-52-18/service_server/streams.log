@@ -1,0 +1,25 @@
+[0.464s] Invoking command in '/home/yutou/ros2_ws/src/service_server': PYTHONPATH=/home/yutou/ros2_ws/build/service_server/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/service_server build --build-base /home/yutou/ros2_ws/build/service_server/build install --record /home/yutou/ros2_ws/build/service_server/install.log --single-version-externally-managed install_data
+[0.583s] running egg_info
+[0.583s] writing ../../build/service_server/service_server.egg-info/PKG-INFO
+[0.583s] writing dependency_links to ../../build/service_server/service_server.egg-info/dependency_links.txt
+[0.584s] writing entry points to ../../build/service_server/service_server.egg-info/entry_points.txt
+[0.584s] writing requirements to ../../build/service_server/service_server.egg-info/requires.txt
+[0.584s] writing top-level names to ../../build/service_server/service_server.egg-info/top_level.txt
+[0.584s] reading manifest file '../../build/service_server/service_server.egg-info/SOURCES.txt'
+[0.585s] writing manifest file '../../build/service_server/service_server.egg-info/SOURCES.txt'
+[0.585s] running build
+[0.585s] running build_py
+[0.585s] copying service_server/service_server.py -> /home/yutou/ros2_ws/build/service_server/build/lib/service_server
+[0.585s] running install
+[0.585s] running install_lib
+[0.586s] copying /home/yutou/ros2_ws/build/service_server/build/lib/service_server/service_server.py -> /home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages/service_server
+[0.586s] byte-compiling /home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages/service_server/service_server.py to service_server.cpython-310.pyc
+[0.586s] running install_data
+[0.587s] running install_egg_info
+[0.588s] removing '/home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages/service_server-0.0.0-py3.10.egg-info' (and everything under it)
+[0.588s] Copying ../../build/service_server/service_server.egg-info to /home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages/service_server-0.0.0-py3.10.egg-info
+[0.588s] running install_scripts
+[0.601s] Installing service_client script to /home/yutou/ros2_ws/install/service_server/lib/service_server
+[0.601s] Installing service_server script to /home/yutou/ros2_ws/install/service_server/lib/service_server
+[0.601s] writing list of installed files to '/home/yutou/ros2_ws/build/service_server/install.log'
+[0.619s] Invoked command in '/home/yutou/ros2_ws/src/service_server' returned '0': PYTHONPATH=/home/yutou/ros2_ws/build/service_server/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/service_server build --build-base /home/yutou/ros2_ws/build/service_server/build install --record /home/yutou/ros2_ws/build/service_server/install.log --single-version-externally-managed install_data
