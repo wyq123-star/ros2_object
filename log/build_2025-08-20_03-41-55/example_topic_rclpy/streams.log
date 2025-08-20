@@ -1,0 +1,23 @@
+[0.631s] Invoking command in '/home/yutou/ros2_ws/src/example_topic_rclpy': PYTHONPATH=/home/yutou/ros2_ws/build/example_topic_rclpy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yutou/ros2_ws/install/example_topic_rclpy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/example_topic_rclpy build --build-base /home/yutou/ros2_ws/build/example_topic_rclpy/build install --record /home/yutou/ros2_ws/build/example_topic_rclpy/install.log --single-version-externally-managed install_data
+[0.761s] running egg_info
+[0.761s] writing ../../build/example_topic_rclpy/example_topic_rclpy.egg-info/PKG-INFO
+[0.761s] writing dependency_links to ../../build/example_topic_rclpy/example_topic_rclpy.egg-info/dependency_links.txt
+[0.761s] writing entry points to ../../build/example_topic_rclpy/example_topic_rclpy.egg-info/entry_points.txt
+[0.761s] writing requirements to ../../build/example_topic_rclpy/example_topic_rclpy.egg-info/requires.txt
+[0.761s] writing top-level names to ../../build/example_topic_rclpy/example_topic_rclpy.egg-info/top_level.txt
+[0.762s] reading manifest file '../../build/example_topic_rclpy/example_topic_rclpy.egg-info/SOURCES.txt'
+[0.763s] writing manifest file '../../build/example_topic_rclpy/example_topic_rclpy.egg-info/SOURCES.txt'
+[0.763s] running build
+[0.763s] running build_py
+[0.763s] running install
+[0.763s] running install_lib
+[0.764s] running install_data
+[0.764s] running install_egg_info
+[0.765s] removing '/home/yutou/ros2_ws/install/example_topic_rclpy/lib/python3.10/site-packages/example_topic_rclpy-0.0.0-py3.10.egg-info' (and everything under it)
+[0.765s] Copying ../../build/example_topic_rclpy/example_topic_rclpy.egg-info to /home/yutou/ros2_ws/install/example_topic_rclpy/lib/python3.10/site-packages/example_topic_rclpy-0.0.0-py3.10.egg-info
+[0.766s] running install_scripts
+[0.779s] Installing server script to /home/yutou/ros2_ws/install/example_topic_rclpy/lib/example_topic_rclpy
+[0.779s] Installing topic_publisher_02 script to /home/yutou/ros2_ws/install/example_topic_rclpy/lib/example_topic_rclpy
+[0.780s] Installing topic_subscriber_02 script to /home/yutou/ros2_ws/install/example_topic_rclpy/lib/example_topic_rclpy
+[0.780s] writing list of installed files to '/home/yutou/ros2_ws/build/example_topic_rclpy/install.log'
+[0.797s] Invoked command in '/home/yutou/ros2_ws/src/example_topic_rclpy' returned '0': PYTHONPATH=/home/yutou/ros2_ws/build/example_topic_rclpy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yutou/ros2_ws/install/example_topic_rclpy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/example_topic_rclpy build --build-base /home/yutou/ros2_ws/build/example_topic_rclpy/build install --record /home/yutou/ros2_ws/build/example_topic_rclpy/install.log --single-version-externally-managed install_data

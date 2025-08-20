@@ -1,0 +1,30 @@
+# --- ROS 2 构建和开发文件 ---
+build/          # Colcon 构建目录
+install/        # 安装目录
+log/            # 日志文件
+*.rosinstall    # rosinstall 配置文件
+
+# --- Python 缓存和虚拟环境 ---
+__pycache__/    # Python 缓存文件
+*.py[cod]       # 编译后的 Python 文件
+*.so            # Python/C++ 编译的动态库
+venv/           # Python 虚拟环境
+
+# --- C++ 编译文件 ---
+*.o             # 对象文件
+*.a             # 静态库
+*.out           # 可执行文件（如果手动编译）
+
+# --- IDE 和编辑器临时文件 ---
+.vscode/        # VS Code 配置
+.idea/          # PyCharm/CLion 配置
+*.swp           # Vim 临时文件
+*~              # 备份文件
+
+# --- 系统文件 ---
+.DS_Store       # macOS 属性文件
+Thumbs.db       # Windows 缩略图缓存
+
+# --- 其他 ROS 相关文件 ---
+*.bak           # 备份文件
+*.orig          # 合并冲突文件

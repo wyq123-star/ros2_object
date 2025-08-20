@@ -7,7 +7,7 @@ ARG USER_GID=$USER_UID
 # 安装基础工具（包括 wget）
 RUN apt-get update && \
     apt-get install -y wget ros-humble-nav2-bringup ros-humble-gazebo-ros-pkgs && \
-    apt-get install gazebo libgazebo-dev  && \
+    apt-get install gazebo libgazebo-dev ros-$ROS_DISTRO-joint-state-publisher-gui ros-$ROS_DISTRO-robot-state-publisher&& \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
