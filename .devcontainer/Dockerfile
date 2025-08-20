@@ -6,10 +6,16 @@ ARG USER_GID=$USER_UID
 
 # 安装基础工具（包括 wget）
 RUN apt-get update && \
-    apt-get install -y wget ros-humble-nav2-bringup ros-humble-gazebo-ros-pkgs && \
+    apt-get install -y wget ros-humble-nav2-bringup ros-humble-gazebo-ros-pkgs ros-humble-cartographer && \
     apt-get install gazebo libgazebo-dev ros-$ROS_DISTRO-joint-state-publisher-gui ros-$ROS_DISTRO-robot-state-publisher&& \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
+# sudo apt install ros-humble-cartographer-ros
+#克隆元马
+#git clone https://ghproxy.com/https://github.com/ros2/cartographer.git -b ros2
+#git clone https://ghproxy.com/https://github.com/ros2/cartographer_ros.git -b ros2
+
+###
 
 # 安装 Fish Shell 和 Nautilus
 RUN apt-get update && \

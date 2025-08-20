@@ -1,0 +1,6 @@
+Invoking command in '/home/yutou/ros2_ws/build/fishbot_cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/yutou/ros2_ws/src/fishbot_cartographer -DCMAKE_INSTALL_PREFIX=/home/yutou/ros2_ws/install/fishbot_cartographer
+Invoked command in '/home/yutou/ros2_ws/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/yutou/ros2_ws/src/fishbot_cartographer -DCMAKE_INSTALL_PREFIX=/home/yutou/ros2_ws/install/fishbot_cartographer
+Invoking command in '/home/yutou/ros2_ws/build/fishbot_cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yutou/ros2_ws/build/fishbot_cartographer -- -j20 -l20
+Invoked command in '/home/yutou/ros2_ws/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yutou/ros2_ws/build/fishbot_cartographer -- -j20 -l20
+Invoking command in '/home/yutou/ros2_ws/build/fishbot_cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yutou/ros2_ws/build/fishbot_cartographer
+Invoked command in '/home/yutou/ros2_ws/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yutou/ros2_ws/build/fishbot_cartographer
