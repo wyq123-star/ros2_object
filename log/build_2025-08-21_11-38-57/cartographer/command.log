@@ -1,4 +1,0 @@
-Invoking command in '/home/yutou/ros2_ws/build/cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/yutou/ros2_ws/packages/cartographer -DCMAKE_INSTALL_PREFIX=/home/yutou/ros2_ws/install/cartographer
-Invoked command in '/home/yutou/ros2_ws/build/cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/yutou/ros2_ws/packages/cartographer -DCMAKE_INSTALL_PREFIX=/home/yutou/ros2_ws/install/cartographer
-Invoking command in '/home/yutou/ros2_ws/build/cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yutou/ros2_ws/build/cartographer -- -j20 -l20
-Invoked command in '/home/yutou/ros2_ws/build/cartographer' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yutou/ros2_ws/build/cartographer -- -j20 -l20

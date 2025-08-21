@@ -1,6 +1,0 @@
-Invoking command in '/home/yutou/ros2_ws/build/cartographer_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/yutou/ros2_ws/packages/cartographer_ros/cartographer_ros_msgs -DCMAKE_INSTALL_PREFIX=/home/yutou/ros2_ws/install/cartographer_ros_msgs
-Invoked command in '/home/yutou/ros2_ws/build/cartographer_ros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/yutou/ros2_ws/packages/cartographer_ros/cartographer_ros_msgs -DCMAKE_INSTALL_PREFIX=/home/yutou/ros2_ws/install/cartographer_ros_msgs
-Invoking command in '/home/yutou/ros2_ws/build/cartographer_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yutou/ros2_ws/build/cartographer_ros_msgs -- -j20 -l20
-Invoked command in '/home/yutou/ros2_ws/build/cartographer_ros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yutou/ros2_ws/build/cartographer_ros_msgs -- -j20 -l20
-Invoking command in '/home/yutou/ros2_ws/build/cartographer_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yutou/ros2_ws/build/cartographer_ros_msgs
-Invoked command in '/home/yutou/ros2_ws/build/cartographer_ros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yutou/ros2_ws/build/cartographer_ros_msgs
