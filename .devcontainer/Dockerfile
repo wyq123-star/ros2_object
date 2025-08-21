@@ -1,45 +1,64 @@
+# 基础镜像（ROS Humble 桌面完整版）
 FROM osrf/ros:humble-desktop-full
 
+# 用户参数
 ARG USERNAME=yutou
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
-# 安装基础工具（包括 wget）
+# ------------------------------
+# 安装核心工具和ROS包
+# ------------------------------
 RUN apt-get update && \
-    apt-get install -y wget ros-humble-nav2-bringup ros-humble-gazebo-ros-pkgs ros-humble-cartographer && \
-    apt-get install gazebo libgazebo-dev ros-$ROS_DISTRO-joint-state-publisher-gui ros-$ROS_DISTRO-robot-state-publisher&& \
+    apt-get install -y \
+        wget \
+        ros-humble-nav2-bringup \
+        ros-humble-gazebo-ros-pkgs \
+        ros-humble-cartographer \
+        ros-humble-cartographer-ros \
+        gazebo \
+        libgazebo-dev \
+        ros-$ROS_DISTRO-joint-state-publisher-gui \
+        ros-$ROS_DISTRO-robot-state-publisher && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-# sudo apt install ros-humble-cartographer-ros
-#克隆元马
-#git clone https://ghproxy.com/https://github.com/ros2/cartographer.git -b ros2
-#git clone https://ghproxy.com/https://github.com/ros2/cartographer_ros.git -b ros2
 
-###
-
-# 安装 Fish Shell 和 Nautilus
+# ------------------------------
+# 安装Fish Shell和文件管理器
+# ------------------------------
 RUN apt-get update && \
-    apt-get install -y fish nautilus && \
+    apt-get install -y \
+        fish \
+        gedit \
+        ros-humble-rqt-tf-tree \
+        ros-humble-foxglove-bridge \
+        nautilus && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-
-# 创建用户并设置主目录
+#sudo apt install ros-${ROS_DISTRO}-rqt-tf
+# ------------------------------
+# 创建用户并配置权限
+# ------------------------------
 RUN groupadd --gid $USER_GID $USERNAME && \
     useradd --uid $USER_UID --gid $USER_GID -m $USERNAME && \
-    apt-get update && apt-get install -y sudo && \
+    apt-get update && \
+    apt-get install -y sudo && \
     echo "$USERNAME ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
-# 设置 ROS 环境变量
+# ------------------------------
+# 配置ROS环境
+# ------------------------------
 ENV ROS_DISTRO=humble
 ENV ROS_SETUP_BASH="/opt/ros/humble/setup.bash"
 
-# 自动 source ROS 环境（仅 bash）
+# 为bash用户自动加载ROS环境
 RUN echo "source $ROS_SETUP_BASH" >> /home/$USERNAME/.bashrc
-
-
-# 切换用户并设置工作目录
+RUN echo "source ${HOME}/ros2_ws/install/setup.bash" >> ~/.bashrc
+# ------------------------------
+# 切换用户和工作目录
+# ------------------------------
 USER $USERNAME
 WORKDIR /home/$USERNAME
 
-# 默认入口
+# 默认启动命令
 CMD ["/bin/bash"]

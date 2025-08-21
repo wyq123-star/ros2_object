@@ -40,11 +40,17 @@ def generate_launch_description():
         output='screen',
         # arguments=['-d', default_rviz_config_path]
         )
+    mao_to_odom_node = Node(
+        package= 'tf2_ros',
+        executable='static_transform_publisher',
+        name='map_to_odom',
+        arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
+    )
 
     ld.add_action(start_gazebo_cmd)
     ld.add_action(spawn_entity_cmd)
     ld.add_action(start_robot_state_publisher_cmd)
-    ld.add_action(start_rviz_cmd)
-
+    # ld.add_action(start_rviz_cmd)
+    ld.add_action(mao_to_odom_node)
 
     return ld

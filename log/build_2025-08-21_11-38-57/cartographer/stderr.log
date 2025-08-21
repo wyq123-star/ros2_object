@@ -1,0 +1,53 @@
+gmake[2]: *** Deleting file 'cartographer.mapping.2d.xy_index_test'
+gmake[2]: *** Deleting file 'cartographer.io.proto_stream_deserializer_test'
+gmake[2]: *** [CMakeFiles/cartographer.mapping.id_test.dir/build.make:76: CMakeFiles/cartographer.mapping.id_test.dir/cartographer/mapping/id_test.cc.o] Interrupt
+gmake[2]: *** [CMakeFiles/cartographer.mapping.3d.range_data_inserter_3d_test.dir/build.make:76: CMakeFiles/cartographer.mapping.3d.range_data_inserter_3d_test.dir/cartographer/mapping/3d/range_data_inserter_3d_test.cc.o] Interrupt
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:1110: CMakeFiles/cartographer.mapping.3d.range_data_inserter_3d_test.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:1170: CMakeFiles/cartographer.mapping.id_test.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:1080: CMakeFiles/cartographer.mapping.3d.hybrid_grid_test.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/cartographer.io.probability_grid_points_processor_test.dir/build.make:76: CMakeFiles/cartographer.io.probability_grid_points_processor_test.dir/cartographer/io/probability_grid_points_processor_test.cc.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:810: CMakeFiles/cartographer.io.probability_grid_points_processor_test.dir/all] Interrupt
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** [CMakeFiles/cartographer.io.proto_stream_deserializer_test.dir/build.make:140: cartographer.io.proto_stream_deserializer_test] Interrupt
+gmake[2]: *** [CMakeFiles/cartographer.io.serialization_format_migration_test.dir/build.make:76: CMakeFiles/cartographer.io.serialization_format_migration_test.dir/cartographer/io/serialization_format_migration_test.cc.o] Interrupt
+gmake[2]: *** [CMakeFiles/cartographer.common.configuration_files_test.dir/build.make:76: CMakeFiles/cartographer.common.configuration_files_test.dir/cartographer/common/configuration_files_test.cc.o] Interrupt
+gmake[2]: *** [CMakeFiles/cartographer.mapping.2d.range_data_inserter_2d_test.dir/build.make:76: CMakeFiles/cartographer.mapping.2d.range_data_inserter_2d_test.dir/cartographer/mapping/2d/range_data_inserter_2d_test.cc.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:1020: CMakeFiles/cartographer.mapping.2d.submap_2d_test.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:840: CMakeFiles/cartographer.io.proto_stream_deserializer_test.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:900: CMakeFiles/cartographer.io.serialization_format_migration_test.dir/all] Interrupt
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** [CMakeFiles/cartographer.mapping.3d.submap_3d_test.dir/build.make:76: CMakeFiles/cartographer.mapping.3d.submap_3d_test.dir/cartographer/mapping/3d/submap_3d_test.cc.o] Interrupt
+gmake[2]: *** [CMakeFiles/cartographer.mapping.imu_tracker_test.dir/build.make:76: CMakeFiles/cartographer.mapping.imu_tracker_test.dir/cartographer/mapping/imu_tracker_test.cc.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:990: CMakeFiles/cartographer.mapping.2d.range_data_inserter_2d_test.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:930: CMakeFiles/cartographer.mapping.2d.map_limits_test.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:1140: CMakeFiles/cartographer.mapping.3d.submap_3d_test.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/cartographer.mapping.internal.2d.normal_estimation_2d_test.dir/build.make:76: CMakeFiles/cartographer.mapping.internal.2d.normal_estimation_2d_test.dir/cartographer/mapping/internal/2d/normal_estimation_2d_test.cc.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:480: CMakeFiles/cartographer.common.configuration_files_test.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:1200: CMakeFiles/cartographer.mapping.imu_tracker_test.dir/all] Interrupt
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:1230: CMakeFiles/cartographer.mapping.internal.2d.normal_estimation_2d_test.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/cartographer.mapping.internal.2d.overlapping_submaps_trimmer_2d_test.dir/build.make:76: CMakeFiles/cartographer.mapping.internal.2d.overlapping_submaps_trimmer_2d_test.dir/cartographer/mapping/internal/2d/overlapping_submaps_trimmer_2d_test.cc.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:600: CMakeFiles/cartographer.common.lua_parameter_dictionary_test.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:1260: CMakeFiles/cartographer.mapping.internal.2d.overlapping_submaps_trimmer_2d_test.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/cartographer.mapping.2d.probability_grid_test.dir/build.make:76: CMakeFiles/cartographer.mapping.2d.probability_grid_test.dir/cartographer/mapping/2d/probability_grid_test.cc.o] Interrupt
+gmake[2]: *** [CMakeFiles/cartographer.mapping.2d.xy_index_test.dir/build.make:140: cartographer.mapping.2d.xy_index_test] Interrupt
+gmake[2]: *** [CMakeFiles/cartographer.io.points_processor_pipeline_builder_test.dir/build.make:76: CMakeFiles/cartographer.io.points_processor_pipeline_builder_test.dir/cartographer/io/points_processor_pipeline_builder_test.cc.o] Interrupt
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** [CMakeFiles/cartographer.mapping.internal.2d.pose_graph_2d_test.dir/build.make:76: CMakeFiles/cartographer.mapping.internal.2d.pose_graph_2d_test.dir/cartographer/mapping/internal/2d/pose_graph_2d_test.cc.o] Interrupt
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:780: CMakeFiles/cartographer.io.points_processor_pipeline_builder_test.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:960: CMakeFiles/cartographer.mapping.2d.probability_grid_test.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:1050: CMakeFiles/cartographer.mapping.2d.xy_index_test.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:1290: CMakeFiles/cartographer.mapping.internal.2d.pose_graph_2d_test.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:1320: CMakeFiles/cartographer.mapping.internal.2d.ray_to_pixel_mask_test.dir/all] Error 2
+gmake: *** [Makefile:146: all] Interrupt
