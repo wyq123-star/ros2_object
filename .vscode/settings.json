@@ -3,5 +3,6 @@
     "/opt/ros/humble/lib/python3.10/site-packages"
   ],
   "python.envFile": "${workspaceFolder}/.env",
-  "python.defaultInterpreterPath": "/usr/bin/python3"
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "cmake.sourceDirectory": "/home/yutou/ros2_ws/packages/cartographer"
 }

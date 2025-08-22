@@ -1,0 +1,45 @@
+[0.482s] Invoking command in '/home/yutou/ros2_ws/src/service_server': PYTHONPATH=/home/yutou/ros2_ws/build/service_server/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/service_server build --build-base /home/yutou/ros2_ws/build/service_server/build install --record /home/yutou/ros2_ws/build/service_server/install.log --single-version-externally-managed install_data
+[0.607s] running egg_info
+[0.608s] creating ../../build/service_server/service_server.egg-info
+[0.608s] writing ../../build/service_server/service_server.egg-info/PKG-INFO
+[0.608s] writing dependency_links to ../../build/service_server/service_server.egg-info/dependency_links.txt
+[0.608s] writing entry points to ../../build/service_server/service_server.egg-info/entry_points.txt
+[0.608s] writing requirements to ../../build/service_server/service_server.egg-info/requires.txt
+[0.608s] writing top-level names to ../../build/service_server/service_server.egg-info/top_level.txt
+[0.608s] writing manifest file '../../build/service_server/service_server.egg-info/SOURCES.txt'
+[0.609s] reading manifest file '../../build/service_server/service_server.egg-info/SOURCES.txt'
+[0.609s] writing manifest file '../../build/service_server/service_server.egg-info/SOURCES.txt'
+[0.609s] running build
+[0.609s] running build_py
+[0.610s] creating /home/yutou/ros2_ws/build/service_server/build
+[0.610s] creating /home/yutou/ros2_ws/build/service_server/build/lib
+[0.610s] creating /home/yutou/ros2_ws/build/service_server/build/lib/service_server
+[0.610s] copying service_server/service_server.py -> /home/yutou/ros2_ws/build/service_server/build/lib/service_server
+[0.610s] copying service_server/server.py -> /home/yutou/ros2_ws/build/service_server/build/lib/service_server
+[0.610s] copying service_server/service_client.py -> /home/yutou/ros2_ws/build/service_server/build/lib/service_server
+[0.610s] copying service_server/__init__.py -> /home/yutou/ros2_ws/build/service_server/build/lib/service_server
+[0.611s] running install
+[0.611s] running install_lib
+[0.611s] creating /home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages/service_server
+[0.611s] copying /home/yutou/ros2_ws/build/service_server/build/lib/service_server/service_server.py -> /home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages/service_server
+[0.611s] copying /home/yutou/ros2_ws/build/service_server/build/lib/service_server/server.py -> /home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages/service_server
+[0.612s] copying /home/yutou/ros2_ws/build/service_server/build/lib/service_server/service_client.py -> /home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages/service_server
+[0.612s] copying /home/yutou/ros2_ws/build/service_server/build/lib/service_server/__init__.py -> /home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages/service_server
+[0.612s] byte-compiling /home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages/service_server/service_server.py to service_server.cpython-310.pyc
+[0.612s] byte-compiling /home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages/service_server/server.py to server.cpython-310.pyc
+[0.612s] byte-compiling /home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages/service_server/service_client.py to service_client.cpython-310.pyc
+[0.612s] byte-compiling /home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages/service_server/__init__.py to __init__.cpython-310.pyc
+[0.612s] running install_data
+[0.612s] creating /home/yutou/ros2_ws/install/service_server/share/ament_index
+[0.613s] creating /home/yutou/ros2_ws/install/service_server/share/ament_index/resource_index
+[0.613s] creating /home/yutou/ros2_ws/install/service_server/share/ament_index/resource_index/packages
+[0.613s] copying resource/service_server -> /home/yutou/ros2_ws/install/service_server/share/ament_index/resource_index/packages
+[0.613s] copying package.xml -> /home/yutou/ros2_ws/install/service_server/share/service_server
+[0.613s] running install_egg_info
+[0.614s] Copying ../../build/service_server/service_server.egg-info to /home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages/service_server-0.0.0-py3.10.egg-info
+[0.614s] running install_scripts
+[0.628s] Installing server script to /home/yutou/ros2_ws/install/service_server/lib/service_server
+[0.628s] Installing service script to /home/yutou/ros2_ws/install/service_server/lib/service_server
+[0.628s] Installing service_client script to /home/yutou/ros2_ws/install/service_server/lib/service_server
+[0.628s] writing list of installed files to '/home/yutou/ros2_ws/build/service_server/install.log'
+[0.653s] Invoked command in '/home/yutou/ros2_ws/src/service_server' returned '0': PYTHONPATH=/home/yutou/ros2_ws/build/service_server/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/service_server build --build-base /home/yutou/ros2_ws/build/service_server/build install --record /home/yutou/ros2_ws/build/service_server/install.log --single-version-externally-managed install_data

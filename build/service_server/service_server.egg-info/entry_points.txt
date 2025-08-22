@@ -1,0 +1,5 @@
+[console_scripts]
+server = service_server.server:main
+service = service_server.service_server:main
+service_client = service_server.service_client:main
+

@@ -32,10 +32,11 @@ RUN apt-get update && \
         gedit \
         ros-humble-rqt-tf-tree \
         ros-humble-foxglove-bridge \
-        nautilus && \
+        nautilus \
+        curl && \  
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-#sudo apt install ros-${ROS_DISTRO}-rqt-tf
+
 # ------------------------------
 # 创建用户并配置权限
 # ------------------------------
@@ -46,6 +47,20 @@ RUN groupadd --gid $USER_GID $USERNAME && \
     echo "$USERNAME ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 # ------------------------------
+# 安装 Fisher 和 bass（在用户目录下）
+# ------------------------------
+# 切换到用户目录安装
+USER $USERNAME
+WORKDIR /home/$USERNAME
+
+# 创建 Fish 配置目录
+RUN mkdir -p .config/fish/functions && \
+    curl -sL https://git.io/fisher > .config/fish/functions/fisher.fish
+    
+# 安装 bass 插件
+RUN /usr/bin/fish -c "fisher install edc/bass"
+
+# ------------------------------
 # 配置ROS环境
 # ------------------------------
 ENV ROS_DISTRO=humble
@@ -53,12 +68,16 @@ ENV ROS_SETUP_BASH="/opt/ros/humble/setup.bash"
 
 # 为bash用户自动加载ROS环境
 RUN echo "source $ROS_SETUP_BASH" >> /home/$USERNAME/.bashrc
-RUN echo "source ${HOME}/ros2_ws/install/setup.bash" >> ~/.bashrc
+RUN echo "source /home/yutou/ros2_ws/install/setup.bash" >> /home/$USERNAME/.bashrc
+
+# 为fish用户配置ROS环境（可选）
+RUN echo 'bass source /opt/ros/humble/setup.bash' >> /home/$USERNAME/.config/fish/config.fish && \
+    echo 'bass source /home/yutou/ros2_ws/install/setup.bash' >> /home/$USERNAME/.config/fish/config.fish
+
 # ------------------------------
-# 切换用户和工作目录
+# 设置工作目录和默认命令
 # ------------------------------
-USER $USERNAME
 WORKDIR /home/$USERNAME
 
 # 默认启动命令
-CMD ["/bin/bash"]
+CMD ["/usr/bin/fish"]
