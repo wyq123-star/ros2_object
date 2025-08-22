@@ -70,7 +70,7 @@ ENV ROS_SETUP_BASH="/opt/ros/humble/setup.bash"
 RUN echo "source $ROS_SETUP_BASH" >> /home/$USERNAME/.bashrc
 RUN echo "source /home/yutou/ros2_ws/install/setup.bash" >> /home/$USERNAME/.bashrc
 
-# 为fish用户配置ROS环境（可选）
+# # 为fish用户配置ROS环境（可选）
 RUN echo 'bass source /opt/ros/humble/setup.bash' >> /home/$USERNAME/.config/fish/config.fish && \
     echo 'bass source /home/yutou/ros2_ws/install/setup.bash' >> /home/$USERNAME/.config/fish/config.fish
 
