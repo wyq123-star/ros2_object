@@ -1,0 +1,21 @@
+[0.346s] Invoking command in '/home/yutou/ros2_ws/src/story': PYTHONPATH=/home/yutou/ros2_ws/build/story/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yutou/ros2_ws/install/story/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/story build --build-base /home/yutou/ros2_ws/build/story/build install --record /home/yutou/ros2_ws/build/story/install.log --single-version-externally-managed install_data
+[0.474s] running egg_info
+[0.475s] writing ../../build/story/story.egg-info/PKG-INFO
+[0.475s] writing dependency_links to ../../build/story/story.egg-info/dependency_links.txt
+[0.475s] writing entry points to ../../build/story/story.egg-info/entry_points.txt
+[0.475s] writing requirements to ../../build/story/story.egg-info/requires.txt
+[0.475s] writing top-level names to ../../build/story/story.egg-info/top_level.txt
+[0.476s] reading manifest file '../../build/story/story.egg-info/SOURCES.txt'
+[0.476s] writing manifest file '../../build/story/story.egg-info/SOURCES.txt'
+[0.476s] running build
+[0.477s] running build_py
+[0.477s] running install
+[0.477s] running install_lib
+[0.478s] running install_data
+[0.478s] running install_egg_info
+[0.479s] removing '/home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story-0.0.0-py3.10.egg-info' (and everything under it)
+[0.479s] Copying ../../build/story/story.egg-info to /home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story-0.0.0-py3.10.egg-info
+[0.480s] running install_scripts
+[0.494s] Installing story_pub script to /home/yutou/ros2_ws/install/story/lib/story
+[0.494s] writing list of installed files to '/home/yutou/ros2_ws/build/story/install.log'
+[0.509s] Invoked command in '/home/yutou/ros2_ws/src/story' returned '0': PYTHONPATH=/home/yutou/ros2_ws/build/story/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yutou/ros2_ws/install/story/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/story build --build-base /home/yutou/ros2_ws/build/story/build install --record /home/yutou/ros2_ws/build/story/install.log --single-version-externally-managed install_data

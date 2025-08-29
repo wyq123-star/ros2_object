@@ -1,0 +1,38 @@
+running egg_info
+creating ../../build/story/story.egg-info
+writing ../../build/story/story.egg-info/PKG-INFO
+writing dependency_links to ../../build/story/story.egg-info/dependency_links.txt
+writing entry points to ../../build/story/story.egg-info/entry_points.txt
+writing requirements to ../../build/story/story.egg-info/requires.txt
+writing top-level names to ../../build/story/story.egg-info/top_level.txt
+writing manifest file '../../build/story/story.egg-info/SOURCES.txt'
+reading manifest file '../../build/story/story.egg-info/SOURCES.txt'
+writing manifest file '../../build/story/story.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/yutou/ros2_ws/build/story/build
+creating /home/yutou/ros2_ws/build/story/build/lib
+creating /home/yutou/ros2_ws/build/story/build/lib/story
+copying story/story_pub.py -> /home/yutou/ros2_ws/build/story/build/lib/story
+copying story/story_sub.py -> /home/yutou/ros2_ws/build/story/build/lib/story
+copying story/__init__.py -> /home/yutou/ros2_ws/build/story/build/lib/story
+running install
+running install_lib
+creating /home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story
+copying /home/yutou/ros2_ws/build/story/build/lib/story/story_pub.py -> /home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story
+copying /home/yutou/ros2_ws/build/story/build/lib/story/story_sub.py -> /home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story
+copying /home/yutou/ros2_ws/build/story/build/lib/story/__init__.py -> /home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story
+byte-compiling /home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story/story_pub.py to story_pub.cpython-310.pyc
+byte-compiling /home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story/story_sub.py to story_sub.cpython-310.pyc
+byte-compiling /home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/yutou/ros2_ws/install/story/share/ament_index
+creating /home/yutou/ros2_ws/install/story/share/ament_index/resource_index
+creating /home/yutou/ros2_ws/install/story/share/ament_index/resource_index/packages
+copying resource/story -> /home/yutou/ros2_ws/install/story/share/ament_index/resource_index/packages
+copying package.xml -> /home/yutou/ros2_ws/install/story/share/story
+running install_egg_info
+Copying ../../build/story/story.egg-info to /home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story-0.0.0-py3.10.egg-info
+running install_scripts
+Installing story_pub script to /home/yutou/ros2_ws/install/story/lib/story
+writing list of installed files to '/home/yutou/ros2_ws/build/story/install.log'

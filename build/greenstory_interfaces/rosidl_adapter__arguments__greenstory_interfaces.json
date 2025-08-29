@@ -1,0 +1,7 @@
+{
+  "package_name": "greenstory_interfaces",
+  "non_idl_tuples": [
+    "/home/yutou/ros2_ws/src/greenstory_interfaces:srv/TellStory.srv",
+    "/home/yutou/ros2_ws/src/greenstory_interfaces:msg/ListenStory.msg"
+  ]
+}

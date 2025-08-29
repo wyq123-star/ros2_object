@@ -1,0 +1,60 @@
+[0.000000] (-) TimerEvent: {}
+[0.000474] (-) JobUnselected: {'identifier': 'cartographer'}
+[0.000559] (-) JobUnselected: {'identifier': 'cartographer_ros'}
+[0.000585] (-) JobUnselected: {'identifier': 'cartographer_ros_msgs'}
+[0.000615] (-) JobUnselected: {'identifier': 'cartographer_rviz'}
+[0.000636] (-) JobUnselected: {'identifier': 'example_topic_rclpy'}
+[0.000655] (-) JobUnselected: {'identifier': 'fishbot_cartographer'}
+[0.000674] (-) JobUnselected: {'identifier': 'fishbot_description'}
+[0.000692] (-) JobUnselected: {'identifier': 'fishbot_navigation2'}
+[0.000711] (-) JobUnselected: {'identifier': 'greenstory_interfaces'}
+[0.000728] (-) JobUnselected: {'identifier': 'service_server'}
+[0.000748] (story) JobQueued: {'identifier': 'story', 'dependencies': OrderedDict()}
+[0.000770] (story) JobStarted: {'identifier': 'story'}
+[0.099916] (-) TimerEvent: {}
+[0.200251] (-) TimerEvent: {}
+[0.300530] (-) TimerEvent: {}
+[0.370965] (story) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/story', 'build', '--build-base', '/home/yutou/ros2_ws/build/story/build', 'install', '--record', '/home/yutou/ros2_ws/build/story/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/yutou/ros2_ws/src/story', 'env': {'USER': 'yutou', 'HOSTNAME': 'fishros-linux', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/extensions/git/dist/askpass.sh', 'LD_LIBRARY_PATH': '/home/yutou/ros2_ws/install/greenstory_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'SHLVL': '1', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/bin/helpers/browser.sh', 'OMP_WAIT_POLICY': 'passive', 'HOME': '/home/yutou', 'TERM_PROGRAM_VERSION': '1.103.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-4f1cfefc-ac29-4beb-8e68-97e8f75cac39.sock', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/extensions/git/dist/askpass-main.js', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy', 'REMOTE_CONTAINERS': 'true', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'COLCON_PREFIX_PATH': '/home/yutou/ros2_ws/install', 'WAYLAND_DISPLAY': 'vscode-wayland-bb47edb3-3515-4780-a881-c2bccee4d3e3.sock', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-73888f6f-d821-445b-8f5b-ab55e3296986.sock', 'ROS_SETUP_BASH': '/opt/ros/humble/setup.bash', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/yutou/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/tmp/user/1000', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-73888f6f-d821-445b-8f5b-ab55e3296986.sock","/home/yutou/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-eabcbcdacaac98d9.txt', 'VSCODE_INJECTION': '1', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/tmp/user/1000/vscode-git-18312a9893.sock', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-73888f6f-d821-445b-8f5b-ab55e3296986.sock', 'AMENT_PREFIX_PATH': '/home/yutou/ros2_ws/install/service_server:/home/yutou/ros2_ws/install/greenstory_interfaces:/home/yutou/ros2_ws/install/fishbot_description:/opt/ros/humble', 'SHELL': '/bin/sh', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/yutou/ros2_ws/build/story', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/home/yutou/ros2_ws/build/story/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yutou/ros2_ws/install/story/lib/python3.10/site-packages:/home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages:/home/yutou/ros2_ws/install/greenstory_interfaces/local/lib/python3.10/dist-packages:/home/yutou/ros2_ws/install/fishbot_description/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/yutou/ros2_ws/install/greenstory_interfaces'}, 'shell': False}
+[0.400706] (-) TimerEvent: {}
+[0.500930] (-) TimerEvent: {}
+[0.507553] (story) StdoutLine: {'line': b'running egg_info\n'}
+[0.507951] (story) StdoutLine: {'line': b'creating ../../build/story/story.egg-info\n'}
+[0.508075] (story) StdoutLine: {'line': b'writing ../../build/story/story.egg-info/PKG-INFO\n'}
+[0.508126] (story) StdoutLine: {'line': b'writing dependency_links to ../../build/story/story.egg-info/dependency_links.txt\n'}
+[0.508214] (story) StdoutLine: {'line': b'writing entry points to ../../build/story/story.egg-info/entry_points.txt\n'}
+[0.508250] (story) StdoutLine: {'line': b'writing requirements to ../../build/story/story.egg-info/requires.txt\n'}
+[0.508327] (story) StdoutLine: {'line': b'writing top-level names to ../../build/story/story.egg-info/top_level.txt\n'}
+[0.508471] (story) StdoutLine: {'line': b"writing manifest file '../../build/story/story.egg-info/SOURCES.txt'\n"}
+[0.509384] (story) StdoutLine: {'line': b"reading manifest file '../../build/story/story.egg-info/SOURCES.txt'\n"}
+[0.509797] (story) StdoutLine: {'line': b"writing manifest file '../../build/story/story.egg-info/SOURCES.txt'\n"}
+[0.509916] (story) StdoutLine: {'line': b'running build\n'}
+[0.509991] (story) StdoutLine: {'line': b'running build_py\n'}
+[0.510089] (story) StdoutLine: {'line': b'creating /home/yutou/ros2_ws/build/story/build\n'}
+[0.510295] (story) StdoutLine: {'line': b'creating /home/yutou/ros2_ws/build/story/build/lib\n'}
+[0.510429] (story) StdoutLine: {'line': b'creating /home/yutou/ros2_ws/build/story/build/lib/story\n'}
+[0.510504] (story) StdoutLine: {'line': b'copying story/story_pub.py -> /home/yutou/ros2_ws/build/story/build/lib/story\n'}
+[0.510573] (story) StdoutLine: {'line': b'copying story/story_sub.py -> /home/yutou/ros2_ws/build/story/build/lib/story\n'}
+[0.510639] (story) StdoutLine: {'line': b'copying story/__init__.py -> /home/yutou/ros2_ws/build/story/build/lib/story\n'}
+[0.510703] (story) StdoutLine: {'line': b'running install\n'}
+[0.510783] (story) StdoutLine: {'line': b'running install_lib\n'}
+[0.510849] (story) StdoutLine: {'line': b'creating /home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story\n'}
+[0.511006] (story) StdoutLine: {'line': b'copying /home/yutou/ros2_ws/build/story/build/lib/story/story_pub.py -> /home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story\n'}
+[0.511106] (story) StdoutLine: {'line': b'copying /home/yutou/ros2_ws/build/story/build/lib/story/story_sub.py -> /home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story\n'}
+[0.511182] (story) StdoutLine: {'line': b'copying /home/yutou/ros2_ws/build/story/build/lib/story/__init__.py -> /home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story\n'}
+[0.511289] (story) StdoutLine: {'line': b'byte-compiling /home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story/story_pub.py to story_pub.cpython-310.pyc\n'}
+[0.511688] (story) StdoutLine: {'line': b'byte-compiling /home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story/story_sub.py to story_sub.cpython-310.pyc\n'}
+[0.511772] (story) StdoutLine: {'line': b'byte-compiling /home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story/__init__.py to __init__.cpython-310.pyc\n'}
+[0.511850] (story) StdoutLine: {'line': b'running install_data\n'}
+[0.511929] (story) StdoutLine: {'line': b'creating /home/yutou/ros2_ws/install/story/share/ament_index\n'}
+[0.512016] (story) StdoutLine: {'line': b'creating /home/yutou/ros2_ws/install/story/share/ament_index/resource_index\n'}
+[0.512113] (story) StdoutLine: {'line': b'creating /home/yutou/ros2_ws/install/story/share/ament_index/resource_index/packages\n'}
+[0.512178] (story) StdoutLine: {'line': b'copying resource/story -> /home/yutou/ros2_ws/install/story/share/ament_index/resource_index/packages\n'}
+[0.512241] (story) StdoutLine: {'line': b'copying package.xml -> /home/yutou/ros2_ws/install/story/share/story\n'}
+[0.512315] (story) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.513245] (story) StdoutLine: {'line': b'Copying ../../build/story/story.egg-info to /home/yutou/ros2_ws/install/story/lib/python3.10/site-packages/story-0.0.0-py3.10.egg-info\n'}
+[0.513577] (story) StdoutLine: {'line': b'running install_scripts\n'}
+[0.527467] (story) StdoutLine: {'line': b'Installing story_pub script to /home/yutou/ros2_ws/install/story/lib/story\n'}
+[0.527680] (story) StdoutLine: {'line': b"writing list of installed files to '/home/yutou/ros2_ws/build/story/install.log'\n"}
+[0.542304] (story) CommandEnded: {'returncode': 0}
+[0.552114] (story) JobEnded: {'identifier': 'story', 'rc': 0}
+[0.552692] (-) EventReactorShutdown: {}

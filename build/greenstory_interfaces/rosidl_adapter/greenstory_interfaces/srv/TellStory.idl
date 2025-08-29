@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from greenstory_interfaces/srv/TellStory.srv
+// generated code does not contain a copyright notice
+
+
+module greenstory_interfaces {
+  module srv {
+    struct TellStory_Request {
+      int64 serial_number;
+
+      string name;
+    };
+    struct TellStory_Response {
+      string story;
+    };
+  };
+};

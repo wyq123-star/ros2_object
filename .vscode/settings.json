@@ -4,5 +4,13 @@
   ],
   "python.envFile": "${workspaceFolder}/.env",
   "python.defaultInterpreterPath": "/usr/bin/python3",
-  "cmake.sourceDirectory": "/home/yutou/ros2_ws/packages/cartographer"
+  "cmake.sourceDirectory": "/home/yutou/ros2_ws/packages/cartographer",
+  "ros.distro": "humble",
+  "python.autoComplete.extraPaths": [
+    "/home/yutou/ros2_ws/install/service_server/lib/python3.10/site-packages",
+    "/home/yutou/ros2_ws/install/greenstory_interfaces/local/lib/python3.10/dist-packages",
+    "/home/yutou/ros2_ws/install/fishbot_description/lib/python3.10/site-packages",
+    "/opt/ros/humble/lib/python3.10/site-packages",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages"
+  ]
 }
