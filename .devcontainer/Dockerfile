@@ -16,6 +16,7 @@ RUN apt-get update && \
         ros-humble-gazebo-ros-pkgs \
         ros-humble-cartographer \
         ros-humble-cartographer-ros \
+        pip \
         gazebo \
         libgazebo-dev \
         ros-$ROS_DISTRO-joint-state-publisher-gui \
@@ -34,6 +35,7 @@ RUN apt-get update && \
         ros-humble-foxglove-bridge \
         nautilus \
         curl && \  
+    pip install pyserial && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
