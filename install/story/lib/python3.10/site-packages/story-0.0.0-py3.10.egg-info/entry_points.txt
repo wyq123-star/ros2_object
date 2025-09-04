@@ -1,3 +1,0 @@
-[console_scripts]
-story_pub = story.story_pub:main
-

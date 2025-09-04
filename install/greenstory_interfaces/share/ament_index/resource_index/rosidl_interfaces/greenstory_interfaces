@@ -1,6 +1,0 @@
-msg/ListenStory.idl
-msg/ListenStory.msg
-srv/TellStory.idl
-srv/TellStory.srv
-srv/TellStory_Request.msg
-srv/TellStory_Response.msg
