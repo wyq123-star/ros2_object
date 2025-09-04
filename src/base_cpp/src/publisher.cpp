@@ -63,10 +63,10 @@ private:
           RCLCPP_INFO(this->get_logger(), "退出程序");
           rclcpp::shutdown();
           break;
-        } else {
+        } else if(key == 'h' || key == 'H') {
           // 发布消息
           publish_message();
-        }
+        } 
         
         // 简单延迟防止过度CPU占用
         std::this_thread::sleep_for(std::chrono::milliseconds(100));

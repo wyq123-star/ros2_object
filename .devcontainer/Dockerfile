@@ -30,8 +30,9 @@ RUN apt-get update && \
     apt-get install -y \
         fish \
         gedit \
-        ros-humble-rqt-tf-tree \
-        ros-humble-foxglove-bridge \
+        xterm \ 
+        ros-humble-rqt-tf-tree \ 
+        ros-humble-foxglove-bridge \ 
         nautilus \
         curl && \  
     apt-get clean && \

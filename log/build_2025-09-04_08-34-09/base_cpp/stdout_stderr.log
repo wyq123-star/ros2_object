@@ -1,0 +1,85 @@
+[35m[1mConsolidate compiler generated dependencies of target publisher[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/publisher.cpp.o[0m
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:80:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   80 |   }
+      |    [01;31m[K^[m[K
+      |    [32m[K;[m[K
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:[m[K In constructor ‘[01m[KCppPublisher::CppPublisher()[m[K’:
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:16:28:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KCppPublisher[m[K’ does not have any field named ‘[01m[Kcount_[m[K’
+   16 |   : Node("cpp_publisher"), [01;31m[Kcount_[m[K(0)
+      |                            [01;31m[K^~~~~~[m[K
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:18:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KCppPublisher[m[K’?
+   18 |     [01;31m[Kpublisher_[m[K = this->create_publisher<std_msgs::msg::String>("topic", 10);
+      |     [01;31m[K^~~~~~~~~~[m[K
+      |     [32m[KCppPublisher[m[K
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:21:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kkeyboard_thread_[m[K’ was not declared in this scope
+   21 |     [01;31m[Kkeyboard_thread_[m[K = std::thread(&CppPublisher::keyboard_listener, this);
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:[m[K In destructor ‘[01m[Kvirtual CppPublisher::~CppPublisher()[m[K’:
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:28:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krunning_[m[K’ was not declared in this scope
+   28 |     [01;31m[Krunning_[m[K = false;
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:29:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kkeyboard_thread_[m[K’ was not declared in this scope
+   29 |     if ([01;31m[Kkeyboard_thread_[m[K.joinable()) {
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:[m[K In member function ‘[01m[Kvoid CppPublisher::keyboard_listener()[m[K’:
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:58:28:[m[K [01;31m[Kerror: [m[K‘[01m[Krunning_[m[K’ was not declared in this scope
+   58 |     while (rclcpp::ok() && [01;31m[Krunning_[m[K) {
+      |                            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:69:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_message[m[K’ was not declared in this scope
+   69 |           [01;31m[Kpublish_message[m[K()
+      |           [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:5[m[K:
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:[m[K In function ‘[01m[Kvoid publish_message()[m[K’:
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:86:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   86 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "发布消息: '%s'", message.data.c_str());
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:86:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:86:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   86 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "发布消息: '%s'", message.data.c_str());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:86:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   86 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "发布消息: '%s'", message.data.c_str());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:86:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   86 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "发布消息: '%s'", message.data.c_str());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:5[m[K:
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:86:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   86 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "发布消息: '%s'", message.data.c_str());
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:86:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   86 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "发布消息: '%s'", message.data.c_str());
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:87:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KCppPublisher[m[K’?
+   87 |     [01;31m[Kpublisher_[m[K->publish(message);
+      |     [01;31m[K^~~~~~~~~~[m[K
+      |     [32m[KCppPublisher[m[K
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:[m[K At global scope:
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:94:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+   94 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/publisher.dir/build.make:76: CMakeFiles/publisher.dir/src/publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/publisher.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

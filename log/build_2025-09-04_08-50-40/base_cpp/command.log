@@ -1,0 +1,2 @@
+Invoking command in '/home/yutou/ros2_ws/build/base_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yutou/ros2_ws/install/base:/opt/ros/humble /usr/bin/cmake --build /home/yutou/ros2_ws/build/base_cpp -- -j20 -l20
+Invoked command in '/home/yutou/ros2_ws/build/base_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yutou/ros2_ws/install/base:/opt/ros/humble /usr/bin/cmake --build /home/yutou/ros2_ws/build/base_cpp -- -j20 -l20

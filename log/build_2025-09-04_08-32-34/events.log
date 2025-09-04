@@ -1,0 +1,141 @@
+[0.000000] (-) TimerEvent: {}
+[0.000249] (base) JobQueued: {'identifier': 'base', 'dependencies': OrderedDict()}
+[0.000268] (base_cpp) JobQueued: {'identifier': 'base_cpp', 'dependencies': OrderedDict()}
+[0.000280] (base) JobStarted: {'identifier': 'base'}
+[0.006207] (base_cpp) JobStarted: {'identifier': 'base_cpp'}
+[0.099791] (-) TimerEvent: {}
+[0.153128] (base_cpp) JobProgress: {'identifier': 'base_cpp', 'progress': 'cmake'}
+[0.153735] (base_cpp) JobProgress: {'identifier': 'base_cpp', 'progress': 'build'}
+[0.153778] (base_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yutou/ros2_ws/build/base_cpp', '--', '-j20', '-l20'], 'cwd': '/home/yutou/ros2_ws/build/base_cpp', 'env': OrderedDict([('USER', 'yutou'), ('HOSTNAME', 'fishros-linux'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/bin/helpers/browser.sh'), ('OMP_WAIT_POLICY', 'passive'), ('HOME', '/home/yutou'), ('TERM_PROGRAM_VERSION', '1.103.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-95ad6ae5-eaaa-4efc-9093-a4e7026cc363.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-c01439a6-e3f1-4e34-b5b0-88e97ba9084b.sock'), ('COLCON_PREFIX_PATH', '/home/yutou/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-1a865441-6d90-4e9c-b15e-bc8d696074bd.sock'), ('ROS_SETUP_BASH', '/opt/ros/humble/setup.bash'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/yutou/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-1a865441-6d90-4e9c-b15e-bc8d696074bd.sock","/home/yutou/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-eabcbcdacaac98d9.txt'), ('VSCODE_INJECTION', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-18312a9893.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-1a865441-6d90-4e9c-b15e-bc8d696074bd.sock'), ('AMENT_PREFIX_PATH', '/home/yutou/ros2_ws/install/base_cpp:/home/yutou/ros2_ws/install/base:/opt/ros/humble'), ('SHELL', '/bin/sh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/yutou/ros2_ws/build/base_cpp'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/yutou/ros2_ws/install/base/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/yutou/ros2_ws/install/base_cpp:/home/yutou/ros2_ws/install/base:/opt/ros/humble')]), 'shell': False}
+[0.198623] (base_cpp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/publisher.dir/src/publisher.cpp.o\x1b[0m\n'}
+[0.199888] (-) TimerEvent: {}
+[0.300243] (-) TimerEvent: {}
+[0.343905] (base) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/base', 'build', '--build-base', '/home/yutou/ros2_ws/build/base/build', 'install', '--record', '/home/yutou/ros2_ws/build/base/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/yutou/ros2_ws/src/base', 'env': {'USER': 'yutou', 'HOSTNAME': 'fishros-linux', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/bin/helpers/browser.sh', 'OMP_WAIT_POLICY': 'passive', 'HOME': '/home/yutou', 'TERM_PROGRAM_VERSION': '1.103.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-95ad6ae5-eaaa-4efc-9093-a4e7026cc363.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'WAYLAND_DISPLAY': 'vscode-wayland-c01439a6-e3f1-4e34-b5b0-88e97ba9084b.sock', 'COLCON_PREFIX_PATH': '/home/yutou/ros2_ws/install', 'ROS_DISTRO': 'humble', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-1a865441-6d90-4e9c-b15e-bc8d696074bd.sock', 'ROS_SETUP_BASH': '/opt/ros/humble/setup.bash', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/yutou/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/tmp/user/1000', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-1a865441-6d90-4e9c-b15e-bc8d696074bd.sock","/home/yutou/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-eabcbcdacaac98d9.txt', 'VSCODE_INJECTION': '1', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/user/1000/vscode-git-18312a9893.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-1a865441-6d90-4e9c-b15e-bc8d696074bd.sock', 'AMENT_PREFIX_PATH': '/home/yutou/ros2_ws/install/base_cpp:/home/yutou/ros2_ws/install/base:/opt/ros/humble', 'SHELL': '/bin/sh', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/yutou/ros2_ws/build/base', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/home/yutou/ros2_ws/build/base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yutou/ros2_ws/install/base/lib/python3.10/site-packages:/home/yutou/ros2_ws/install/base/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/yutou/ros2_ws/install/base_cpp'}, 'shell': False}
+[0.400400] (-) TimerEvent: {}
+[0.472326] (base) StdoutLine: {'line': b'running egg_info\n'}
+[0.472791] (base) StdoutLine: {'line': b'writing ../../build/base/base.egg-info/PKG-INFO\n'}
+[0.472889] (base) StdoutLine: {'line': b'writing dependency_links to ../../build/base/base.egg-info/dependency_links.txt\n'}
+[0.473186] (base) StdoutLine: {'line': b'writing entry points to ../../build/base/base.egg-info/entry_points.txt\n'}
+[0.473243] (base) StdoutLine: {'line': b'writing requirements to ../../build/base/base.egg-info/requires.txt\n'}
+[0.473279] (base) StdoutLine: {'line': b'writing top-level names to ../../build/base/base.egg-info/top_level.txt\n'}
+[0.474055] (base) StdoutLine: {'line': b"reading manifest file '../../build/base/base.egg-info/SOURCES.txt'\n"}
+[0.474499] (base) StdoutLine: {'line': b"writing manifest file '../../build/base/base.egg-info/SOURCES.txt'\n"}
+[0.474589] (base) StdoutLine: {'line': b'running build\n'}
+[0.474644] (base) StdoutLine: {'line': b'running build_py\n'}
+[0.474678] (base) StdoutLine: {'line': b'copying base/subscribe.py -> /home/yutou/ros2_ws/build/base/build/lib/base\n'}
+[0.474878] (base) StdoutLine: {'line': b'running install\n'}
+[0.475185] (base) StdoutLine: {'line': b'running install_lib\n'}
+[0.475576] (base) StdoutLine: {'line': b'copying /home/yutou/ros2_ws/build/base/build/lib/base/subscribe.py -> /home/yutou/ros2_ws/install/base/lib/python3.10/site-packages/base\n'}
+[0.475884] (base) StdoutLine: {'line': b'byte-compiling /home/yutou/ros2_ws/install/base/lib/python3.10/site-packages/base/subscribe.py to subscribe.cpython-310.pyc\n'}
+[0.476199] (base) StdoutLine: {'line': b'running install_data\n'}
+[0.476258] (base) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.477477] (base) StdoutLine: {'line': b"removing '/home/yutou/ros2_ws/install/base/lib/python3.10/site-packages/base-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.477587] (base) StdoutLine: {'line': b'Copying ../../build/base/base.egg-info to /home/yutou/ros2_ws/install/base/lib/python3.10/site-packages/base-0.0.0-py3.10.egg-info\n'}
+[0.477887] (base) StdoutLine: {'line': b'running install_scripts\n'}
+[0.491472] (base) StdoutLine: {'line': b'Installing subscriber script to /home/yutou/ros2_ws/install/base/lib/base\n'}
+[0.491657] (base) StdoutLine: {'line': b"writing list of installed files to '/home/yutou/ros2_ws/build/base/install.log'\n"}
+[0.500495] (-) TimerEvent: {}
+[0.508586] (base) CommandEnded: {'returncode': 0}
+[0.516713] (base) JobEnded: {'identifier': 'base', 'rc': 0}
+[0.600674] (-) TimerEvent: {}
+[0.700906] (-) TimerEvent: {}
+[0.801168] (-) TimerEvent: {}
+[0.901458] (-) TimerEvent: {}
+[1.001799] (-) TimerEvent: {}
+[1.102125] (-) TimerEvent: {}
+[1.202449] (-) TimerEvent: {}
+[1.302793] (-) TimerEvent: {}
+[1.403111] (-) TimerEvent: {}
+[1.503445] (-) TimerEvent: {}
+[1.603790] (-) TimerEvent: {}
+[1.697103] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:78:4:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 after class definition\n'}
+[1.697324] (base_cpp) StderrLine: {'line': b'   78 |   }\n'}
+[1.697405] (base_cpp) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.697479] (base_cpp) StderrLine: {'line': b'      |    \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.697549] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KCppPublisher::CppPublisher()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.697635] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:16:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KCppPublisher\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Kcount_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.697709] (base_cpp) StderrLine: {'line': b'   16 |   : Node("cpp_publisher"), \x1b[01;31m\x1b[Kcount_\x1b[m\x1b[K(0)\n'}
+[1.697778] (base_cpp) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.701587] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:18:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KCppPublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.701702] (base_cpp) StderrLine: {'line': b'   18 |     \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K = this->create_publisher<std_msgs::msg::String>("topic", 10);\n'}
+[1.701779] (base_cpp) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.701849] (base_cpp) StderrLine: {'line': b'      |     \x1b[32m\x1b[KCppPublisher\x1b[m\x1b[K\n'}
+[1.703850] (-) TimerEvent: {}
+[1.710362] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:21:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kkeyboard_thread_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.710489] (base_cpp) StderrLine: {'line': b'   21 |     \x1b[01;31m\x1b[Kkeyboard_thread_\x1b[m\x1b[K = std::thread(&CppPublisher::keyboard_listener, this);\n'}
+[1.710568] (base_cpp) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.714914] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:\x1b[m\x1b[K In destructor \xe2\x80\x98\x1b[01m\x1b[Kvirtual CppPublisher::~CppPublisher()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.715165] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:28:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krunning_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.715248] (base_cpp) StderrLine: {'line': b'   28 |     \x1b[01;31m\x1b[Krunning_\x1b[m\x1b[K = false;\n'}
+[1.715323] (base_cpp) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.721104] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:29:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kkeyboard_thread_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.721263] (base_cpp) StderrLine: {'line': b'   29 |     if (\x1b[01;31m\x1b[Kkeyboard_thread_\x1b[m\x1b[K.joinable()) {\n'}
+[1.721346] (base_cpp) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.725532] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid CppPublisher::keyboard_listener()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.725623] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:58:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krunning_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.725696] (base_cpp) StderrLine: {'line': b'   58 |     while (rclcpp::ok() && \x1b[01;31m\x1b[Krunning_\x1b[m\x1b[K) {\n'}
+[1.725764] (base_cpp) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.731466] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:69:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublish_message\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.731587] (base_cpp) StderrLine: {'line': b'   69 |           \x1b[01;31m\x1b[Kpublish_message\x1b[m\x1b[K();\n'}
+[1.731663] (base_cpp) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.731797] (base_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[1.731904] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[1.732028] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.732105] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[1.732176] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.732247] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.732318] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[1.732384] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[1.732459] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.732527] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.732601] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:5\x1b[m\x1b[K:\n'}
+[1.732672] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid publish_message()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.732744] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:84:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.732817] (base_cpp) StderrLine: {'line': b'   84 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "\xe5\x8f\x91\xe5\xb8\x83\xe6\xb6\x88\xe6\x81\xaf: \'%s\'", message.data.c_str());\n'}
+[1.732889] (base_cpp) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.732956] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:84:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.733023] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:84:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.733153] (base_cpp) StderrLine: {'line': b'   84 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "\xe5\x8f\x91\xe5\xb8\x83\xe6\xb6\x88\xe6\x81\xaf: \'%s\'", message.data.c_str());\n'}
+[1.733210] (base_cpp) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.733248] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:84:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.733283] (base_cpp) StderrLine: {'line': b'   84 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "\xe5\x8f\x91\xe5\xb8\x83\xe6\xb6\x88\xe6\x81\xaf: \'%s\'", message.data.c_str());\n'}
+[1.733316] (base_cpp) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.733354] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:84:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.733386] (base_cpp) StderrLine: {'line': b'   84 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "\xe5\x8f\x91\xe5\xb8\x83\xe6\xb6\x88\xe6\x81\xaf: \'%s\'", message.data.c_str());\n'}
+[1.733419] (base_cpp) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.733450] (base_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[1.733482] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[1.733514] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[1.733546] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.733583] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[1.733621] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.733652] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.733685] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[1.733715] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[1.733745] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.733786] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.733818] (base_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:5\x1b[m\x1b[K:\n'}
+[1.733850] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:84:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.733884] (base_cpp) StderrLine: {'line': b'   84 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "\xe5\x8f\x91\xe5\xb8\x83\xe6\xb6\x88\xe6\x81\xaf: \'%s\'", message.data.c_str());\n'}
+[1.733916] (base_cpp) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.733946] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:84:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.733977] (base_cpp) StderrLine: {'line': b'   84 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "\xe5\x8f\x91\xe5\xb8\x83\xe6\xb6\x88\xe6\x81\xaf: \'%s\'", message.data.c_str());\n'}
+[1.734013] (base_cpp) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.734583] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:85:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KCppPublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.734655] (base_cpp) StderrLine: {'line': b'   85 |     \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K->publish(message);\n'}
+[1.734696] (base_cpp) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.734729] (base_cpp) StderrLine: {'line': b'      |     \x1b[32m\x1b[KCppPublisher\x1b[m\x1b[K\n'}
+[1.735956] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:\x1b[m\x1b[K At global scope:\n'}
+[1.736067] (base_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:92:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.736140] (base_cpp) StderrLine: {'line': b'   92 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[1.736210] (base_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.803967] (-) TimerEvent: {}
+[1.904368] (-) TimerEvent: {}
+[2.004778] (-) TimerEvent: {}
+[2.105196] (-) TimerEvent: {}
+[2.160072] (base_cpp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/publisher.dir/build.make:76: CMakeFiles/publisher.dir/src/publisher.cpp.o] Error 1\n'}
+[2.160299] (base_cpp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/publisher.dir/all] Error 2\n'}
+[2.160398] (base_cpp) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[2.162364] (base_cpp) CommandEnded: {'returncode': 2}
+[2.168482] (base_cpp) JobEnded: {'identifier': 'base_cpp', 'rc': 2}
+[2.169073] (-) EventReactorShutdown: {}
