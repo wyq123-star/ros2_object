@@ -17,6 +17,7 @@ PI = 3.1415926
 FRAME_HEAD = str('fc')
 TYPE_IMU = str('40')
 IMU_LEN = str('38')  # 56 bytes
+g = 9.79849 # m/s^2 南京
 
 class IMUROS2Bridge(Node):
     def __init__(self):
@@ -35,10 +36,11 @@ class IMUROS2Bridge(Node):
         self.data_queue = queue.Queue(maxsize=100)  # 设置适当容量防止内存溢出
 
         # 创建多个发布者来发布不同类型的数据
-        self.imu_pub = self.create_publisher(Imu, 'imu/data_raw', 10)
-        self.mag_pub = self.create_publisher(MagneticField, 'imu/mag', 10)
-        self.temp_pub = self.create_publisher(Temperature, 'imu/temp', 10)
-        self.pressure_pub = self.create_publisher(Float32, 'imu/pressure', 10)
+        self.imu_raw_pub = self.create_publisher(Imu, 'imu/data_raw', 10)
+        self.imu_transformed_pub = self.create_publisher(Imu, 'imu/data_transformed', 10)
+        # self.mag_pub = self.create_publisher(MagneticField, 'imu/mag', 10)
+        # self.temp_pub = self.create_publisher(Temperature, 'imu/temp', 10)
+        # self.pressure_pub = self.create_publisher(Float32, 'imu/pressure', 10)
 
         # 初始化串口连接
         try:
@@ -145,39 +147,53 @@ class IMUROS2Bridge(Node):
         imu_msg.linear_acceleration.x = float(imu_data[3])
         imu_msg.linear_acceleration.y = float(imu_data[4])
         imu_msg.linear_acceleration.z = float(imu_data[5])
-        
         # 注意：协方差矩阵通常需要根据传感器性能填写
         imu_msg.angular_velocity_covariance[0] = -1  # 表示数据未定义
         imu_msg.linear_acceleration_covariance[0] = -1 # 表示数据未定义
         
-        self.imu_pub.publish(imu_msg)
+        self.imu_raw_pub.publish(imu_msg)
+
+        imu_msg_transformed = Imu()
+        imu_msg_transformed.header = Header()
+        imu_msg_transformed.header.stamp = current_time
+        imu_msg_transformed.header.frame_id = self.frame_id
+
+        imu_msg_transformed.angular_velocity.x = float(imu_data[0])
+        imu_msg_transformed.angular_velocity.y = float(imu_data[1])
+        imu_msg_transformed.angular_velocity.z = float(imu_data[2])
+
+        imu_msg_transformed.linear_acceleration.x = float(imu_data[3]) / g
+        imu_msg_transformed.linear_acceleration.y = float(imu_data[4]) / g
+        imu_msg_transformed.linear_acceleration.z = float(imu_data[5]) / g
+
+        self.imu_transformed_pub.publish(imu_msg_transformed)
         
         # 2. 发布磁力计数据 (需要从mG转换为特斯拉Tesla)
-        mag_msg = MagneticField()
-        mag_msg.header = Header()
-        mag_msg.header.stamp = current_time
-        mag_msg.header.frame_id = self.frame_id
+        # mag_msg = MagneticField()
+        # mag_msg.header = Header()
+        # mag_msg.header.stamp = current_time
+        # mag_msg.header.frame_id = self.frame_id
         
         # 1 mG = 1e-7 Tesla
-        conversion_factor = 1e-7
-        mag_msg.magnetic_field.x = float(imu_data[6]) * conversion_factor
-        mag_msg.magnetic_field.y = float(imu_data[7]) * conversion_factor
-        mag_msg.magnetic_field.z = float(imu_data[8]) * conversion_factor
+        # conversion_factor = 1e-7
+        # mag_msg.magnetic_field.x = float(imu_data[6]) * conversion_factor
+        # mag_msg.magnetic_field.y = float(imu_data[7]) * conversion_factor
+        # mag_msg.magnetic_field.z = float(imu_data[8]) * conversion_factor
         
-        self.mag_pub.publish(mag_msg)
+        # self.mag_pub.publish(mag_msg)
         
         # 3. 发布温度数据
-        temp_msg = Temperature()
-        temp_msg.header = Header()
-        temp_msg.header.stamp = current_time
-        temp_msg.header.frame_id = self.frame_id
-        temp_msg.temperature = float(imu_data[9])
-        self.temp_pub.publish(temp_msg)
+        # temp_msg = Temperature()
+        # temp_msg.header = Header()
+        # temp_msg.header.stamp = current_time
+        # temp_msg.header.frame_id = self.frame_id
+        # temp_msg.temperature = float(imu_data[9])
+        # self.temp_pub.publish(temp_msg)
         
         # 4. 发布压力数据
-        pressure_msg = Float32()
-        pressure_msg.data = float(imu_data[10])
-        self.pressure_pub.publish(pressure_msg)
+        # pressure_msg = Float32()
+        # pressure_msg.data = float(imu_data[10])
+        # self.pressure_pub.publish(pressure_msg)
         
         # 可选：记录日志，便于调试
         self.get_logger().info(
