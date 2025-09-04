@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yutou/ros2_ws/src/ws_livox/src/livox_ros_driver2
+CMAKE_SOURCE_DIR = /home/yutou/ros2_ws/packages/ws_livox/src/livox_ros_driver2
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/yutou/ros2_ws/build/livox_ros_driver2
@@ -189,6 +189,6 @@ CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_t
 CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/livox_ros_driver2/msg/detail/custom_msg__type_support_c.cpp
 CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/livox_ros_driver2/msg/detail/custom_point__type_support_c.cpp
-	cd /home/yutou/ros2_ws/build/livox_ros_driver2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yutou/ros2_ws/src/ws_livox/src/livox_ros_driver2 /home/yutou/ros2_ws/src/ws_livox/src/livox_ros_driver2 /home/yutou/ros2_ws/build/livox_ros_driver2 /home/yutou/ros2_ws/build/livox_ros_driver2 /home/yutou/ros2_ws/build/livox_ros_driver2/CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yutou/ros2_ws/build/livox_ros_driver2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yutou/ros2_ws/packages/ws_livox/src/livox_ros_driver2 /home/yutou/ros2_ws/packages/ws_livox/src/livox_ros_driver2 /home/yutou/ros2_ws/build/livox_ros_driver2 /home/yutou/ros2_ws/build/livox_ros_driver2 /home/yutou/ros2_ws/build/livox_ros_driver2/CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/depend
 

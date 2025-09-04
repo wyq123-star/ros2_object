@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/yutou/ros2_ws/src/Livox-SDK2/sdk_core/../include -I/home/yutou/ros2_ws/src/Livox-SDK2/sdk_core/../3rdparty -I/home/yutou/ros2_ws/src/Livox-SDK2/sdk_core/../3rdparty/spdlog -I/home/yutou/ros2_ws/src/Livox-SDK2/sdk_core/.
+CXX_INCLUDES = -I/home/yutou/ros2_ws/packages/Livox-SDK2/sdk_core/../include -I/home/yutou/ros2_ws/packages/Livox-SDK2/sdk_core/../3rdparty -I/home/yutou/ros2_ws/packages/Livox-SDK2/sdk_core/../3rdparty/spdlog -I/home/yutou/ros2_ws/packages/Livox-SDK2/sdk_core/.
 
 CXX_FLAGS =  -pthread -Wall -std=gnu++11
 

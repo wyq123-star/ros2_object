@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yutou/ros2_ws/src/Livox-SDK2
+CMAKE_SOURCE_DIR = /home/yutou/ros2_ws/packages/Livox-SDK2
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/yutou/ros2_ws/build/livox_sdk2
@@ -70,18 +70,18 @@ include samples/logger/CMakeFiles/logger.dir/progress.make
 include samples/logger/CMakeFiles/logger.dir/flags.make
 
 samples/logger/CMakeFiles/logger.dir/main.cpp.o: samples/logger/CMakeFiles/logger.dir/flags.make
-samples/logger/CMakeFiles/logger.dir/main.cpp.o: /home/yutou/ros2_ws/src/Livox-SDK2/samples/logger/main.cpp
+samples/logger/CMakeFiles/logger.dir/main.cpp.o: /home/yutou/ros2_ws/packages/Livox-SDK2/samples/logger/main.cpp
 samples/logger/CMakeFiles/logger.dir/main.cpp.o: samples/logger/CMakeFiles/logger.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yutou/ros2_ws/build/livox_sdk2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object samples/logger/CMakeFiles/logger.dir/main.cpp.o"
-	cd /home/yutou/ros2_ws/build/livox_sdk2/samples/logger && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT samples/logger/CMakeFiles/logger.dir/main.cpp.o -MF CMakeFiles/logger.dir/main.cpp.o.d -o CMakeFiles/logger.dir/main.cpp.o -c /home/yutou/ros2_ws/src/Livox-SDK2/samples/logger/main.cpp
+	cd /home/yutou/ros2_ws/build/livox_sdk2/samples/logger && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT samples/logger/CMakeFiles/logger.dir/main.cpp.o -MF CMakeFiles/logger.dir/main.cpp.o.d -o CMakeFiles/logger.dir/main.cpp.o -c /home/yutou/ros2_ws/packages/Livox-SDK2/samples/logger/main.cpp
 
 samples/logger/CMakeFiles/logger.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logger.dir/main.cpp.i"
-	cd /home/yutou/ros2_ws/build/livox_sdk2/samples/logger && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yutou/ros2_ws/src/Livox-SDK2/samples/logger/main.cpp > CMakeFiles/logger.dir/main.cpp.i
+	cd /home/yutou/ros2_ws/build/livox_sdk2/samples/logger && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yutou/ros2_ws/packages/Livox-SDK2/samples/logger/main.cpp > CMakeFiles/logger.dir/main.cpp.i
 
 samples/logger/CMakeFiles/logger.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logger.dir/main.cpp.s"
-	cd /home/yutou/ros2_ws/build/livox_sdk2/samples/logger && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yutou/ros2_ws/src/Livox-SDK2/samples/logger/main.cpp -o CMakeFiles/logger.dir/main.cpp.s
+	cd /home/yutou/ros2_ws/build/livox_sdk2/samples/logger && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yutou/ros2_ws/packages/Livox-SDK2/samples/logger/main.cpp -o CMakeFiles/logger.dir/main.cpp.s
 
 # Object files for target logger
 logger_OBJECTS = \
@@ -106,6 +106,6 @@ samples/logger/CMakeFiles/logger.dir/clean:
 .PHONY : samples/logger/CMakeFiles/logger.dir/clean
 
 samples/logger/CMakeFiles/logger.dir/depend:
-	cd /home/yutou/ros2_ws/build/livox_sdk2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yutou/ros2_ws/src/Livox-SDK2 /home/yutou/ros2_ws/src/Livox-SDK2/samples/logger /home/yutou/ros2_ws/build/livox_sdk2 /home/yutou/ros2_ws/build/livox_sdk2/samples/logger /home/yutou/ros2_ws/build/livox_sdk2/samples/logger/CMakeFiles/logger.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yutou/ros2_ws/build/livox_sdk2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yutou/ros2_ws/packages/Livox-SDK2 /home/yutou/ros2_ws/packages/Livox-SDK2/samples/logger /home/yutou/ros2_ws/build/livox_sdk2 /home/yutou/ros2_ws/build/livox_sdk2/samples/logger /home/yutou/ros2_ws/build/livox_sdk2/samples/logger/CMakeFiles/logger.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : samples/logger/CMakeFiles/logger.dir/depend
 

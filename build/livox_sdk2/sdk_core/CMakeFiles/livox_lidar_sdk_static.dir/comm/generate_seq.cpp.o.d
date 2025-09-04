@@ -1,7 +1,7 @@
 sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/comm/generate_seq.cpp.o: \
- /home/yutou/ros2_ws/src/Livox-SDK2/sdk_core/comm/generate_seq.cpp \
+ /home/yutou/ros2_ws/packages/Livox-SDK2/sdk_core/comm/generate_seq.cpp \
  /usr/include/stdc-predef.h \
- /home/yutou/ros2_ws/src/Livox-SDK2/sdk_core/comm/generate_seq.h \
+ /home/yutou/ros2_ws/packages/Livox-SDK2/sdk_core/comm/generate_seq.h \
  /usr/include/c++/11/cstdint \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

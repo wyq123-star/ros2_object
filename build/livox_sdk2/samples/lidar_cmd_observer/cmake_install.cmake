@@ -1,4 +1,4 @@
-# Install script for directory: /home/yutou/ros2_ws/src/Livox-SDK2/samples/lidar_cmd_observer
+# Install script for directory: /home/yutou/ros2_ws/packages/Livox-SDK2/samples/lidar_cmd_observer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

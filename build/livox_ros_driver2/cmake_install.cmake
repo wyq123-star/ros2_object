@@ -1,4 +1,4 @@
-# Install script for directory: /home/yutou/ros2_ws/src/ws_livox/src/livox_ros_driver2
+# Install script for directory: /home/yutou/ros2_ws/packages/ws_livox/src/livox_ros_driver2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -369,11 +369,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/livox_ros_driver2/msg" TYPE FILE FILES "/home/yutou/ros2_ws/src/ws_livox/src/livox_ros_driver2/msg/CustomPoint.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/livox_ros_driver2/msg" TYPE FILE FILES "/home/yutou/ros2_ws/packages/ws_livox/src/livox_ros_driver2/msg/CustomPoint.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/livox_ros_driver2/msg" TYPE FILE FILES "/home/yutou/ros2_ws/src/ws_livox/src/livox_ros_driver2/msg/CustomMsg.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/livox_ros_driver2/msg" TYPE FILE FILES "/home/yutou/ros2_ws/packages/ws_livox/src/livox_ros_driver2/msg/CustomMsg.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -420,11 +420,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/livox_ros_driver2" TYPE DIRECTORY FILES "/home/yutou/ros2_ws/src/ws_livox/src/livox_ros_driver2/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/livox_ros_driver2" TYPE DIRECTORY FILES "/home/yutou/ros2_ws/packages/ws_livox/src/livox_ros_driver2/config")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/livox_ros_driver2" TYPE DIRECTORY FILES "/home/yutou/ros2_ws/src/ws_livox/src/livox_ros_driver2/launch_ROS2")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/livox_ros_driver2" TYPE DIRECTORY FILES "/home/yutou/ros2_ws/packages/ws_livox/src/livox_ros_driver2/launch_ROS2")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -683,7 +683,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/livox_ros_driver2" TYPE FILE FILES "/home/yutou/ros2_ws/src/ws_livox/src/livox_ros_driver2/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/livox_ros_driver2" TYPE FILE FILES "/home/yutou/ros2_ws/packages/ws_livox/src/livox_ros_driver2/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

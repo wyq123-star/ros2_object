@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yutou/ros2_ws/src/Livox-SDK2
+CMAKE_SOURCE_DIR = /home/yutou/ros2_ws/packages/Livox-SDK2
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/yutou/ros2_ws/build/livox_sdk2

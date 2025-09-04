@@ -216,7 +216,7 @@ livox_sdk2_BINARY_DIR:STATIC=/home/yutou/ros2_ws/build/livox_sdk2/samples
 livox_sdk2_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-livox_sdk2_SOURCE_DIR:STATIC=/home/yutou/ros2_ws/src/Livox-SDK2/samples
+livox_sdk2_SOURCE_DIR:STATIC=/home/yutou/ros2_ws/packages/Livox-SDK2/samples
 
 
 ########################
@@ -303,7 +303,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/yutou/ros2_ws/src/Livox-SDK2
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/yutou/ros2_ws/packages/Livox-SDK2
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

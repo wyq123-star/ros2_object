@@ -1,4 +1,4 @@
-# Install script for directory: /home/yutou/ros2_ws/src/Livox-SDK2/sdk_core
+# Install script for directory: /home/yutou/ros2_ws/packages/Livox-SDK2/sdk_core
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -48,9 +48,9 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES
-    "/home/yutou/ros2_ws/src/Livox-SDK2/sdk_core/../include/livox_lidar_def.h"
-    "/home/yutou/ros2_ws/src/Livox-SDK2/sdk_core/../include/livox_lidar_api.h"
-    "/home/yutou/ros2_ws/src/Livox-SDK2/sdk_core/../include/livox_lidar_cfg.h"
+    "/home/yutou/ros2_ws/packages/Livox-SDK2/sdk_core/../include/livox_lidar_def.h"
+    "/home/yutou/ros2_ws/packages/Livox-SDK2/sdk_core/../include/livox_lidar_api.h"
+    "/home/yutou/ros2_ws/packages/Livox-SDK2/sdk_core/../include/livox_lidar_cfg.h"
     )
 endif()
 

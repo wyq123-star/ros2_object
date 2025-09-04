@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/yutou/ros2_ws/src/Livox-SDK2/samples/livox_lidar_rmc_time_sync/linux/synchro.cpp" "samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/linux/synchro.cpp.o" "gcc" "samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/linux/synchro.cpp.o.d"
-  "/home/yutou/ros2_ws/src/Livox-SDK2/samples/livox_lidar_rmc_time_sync/main.cpp" "samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/main.cpp.o" "gcc" "samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/main.cpp.o.d"
+  "/home/yutou/ros2_ws/packages/Livox-SDK2/samples/livox_lidar_rmc_time_sync/linux/synchro.cpp" "samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/linux/synchro.cpp.o" "gcc" "samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/linux/synchro.cpp.o.d"
+  "/home/yutou/ros2_ws/packages/Livox-SDK2/samples/livox_lidar_rmc_time_sync/main.cpp" "samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/main.cpp.o" "gcc" "samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

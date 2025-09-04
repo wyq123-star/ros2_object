@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yutou/ros2_ws/src/Livox-SDK2
+CMAKE_SOURCE_DIR = /home/yutou/ros2_ws/packages/Livox-SDK2
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/yutou/ros2_ws/build/livox_sdk2
@@ -70,18 +70,18 @@ include samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/p
 include samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/flags.make
 
 samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/main.cpp.o: samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/flags.make
-samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/main.cpp.o: /home/yutou/ros2_ws/src/Livox-SDK2/samples/livox_lidar_quick_start/main.cpp
+samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/main.cpp.o: /home/yutou/ros2_ws/packages/Livox-SDK2/samples/livox_lidar_quick_start/main.cpp
 samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/main.cpp.o: samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yutou/ros2_ws/build/livox_sdk2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/main.cpp.o"
-	cd /home/yutou/ros2_ws/build/livox_sdk2/samples/livox_lidar_quick_start && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/main.cpp.o -MF CMakeFiles/livox_lidar_quick_start.dir/main.cpp.o.d -o CMakeFiles/livox_lidar_quick_start.dir/main.cpp.o -c /home/yutou/ros2_ws/src/Livox-SDK2/samples/livox_lidar_quick_start/main.cpp
+	cd /home/yutou/ros2_ws/build/livox_sdk2/samples/livox_lidar_quick_start && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/main.cpp.o -MF CMakeFiles/livox_lidar_quick_start.dir/main.cpp.o.d -o CMakeFiles/livox_lidar_quick_start.dir/main.cpp.o -c /home/yutou/ros2_ws/packages/Livox-SDK2/samples/livox_lidar_quick_start/main.cpp
 
 samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/livox_lidar_quick_start.dir/main.cpp.i"
-	cd /home/yutou/ros2_ws/build/livox_sdk2/samples/livox_lidar_quick_start && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yutou/ros2_ws/src/Livox-SDK2/samples/livox_lidar_quick_start/main.cpp > CMakeFiles/livox_lidar_quick_start.dir/main.cpp.i
+	cd /home/yutou/ros2_ws/build/livox_sdk2/samples/livox_lidar_quick_start && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yutou/ros2_ws/packages/Livox-SDK2/samples/livox_lidar_quick_start/main.cpp > CMakeFiles/livox_lidar_quick_start.dir/main.cpp.i
 
 samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/livox_lidar_quick_start.dir/main.cpp.s"
-	cd /home/yutou/ros2_ws/build/livox_sdk2/samples/livox_lidar_quick_start && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yutou/ros2_ws/src/Livox-SDK2/samples/livox_lidar_quick_start/main.cpp -o CMakeFiles/livox_lidar_quick_start.dir/main.cpp.s
+	cd /home/yutou/ros2_ws/build/livox_sdk2/samples/livox_lidar_quick_start && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yutou/ros2_ws/packages/Livox-SDK2/samples/livox_lidar_quick_start/main.cpp -o CMakeFiles/livox_lidar_quick_start.dir/main.cpp.s
 
 # Object files for target livox_lidar_quick_start
 livox_lidar_quick_start_OBJECTS = \
@@ -106,6 +106,6 @@ samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/clean:
 .PHONY : samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/clean
 
 samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/depend:
-	cd /home/yutou/ros2_ws/build/livox_sdk2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yutou/ros2_ws/src/Livox-SDK2 /home/yutou/ros2_ws/src/Livox-SDK2/samples/livox_lidar_quick_start /home/yutou/ros2_ws/build/livox_sdk2 /home/yutou/ros2_ws/build/livox_sdk2/samples/livox_lidar_quick_start /home/yutou/ros2_ws/build/livox_sdk2/samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yutou/ros2_ws/build/livox_sdk2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yutou/ros2_ws/packages/Livox-SDK2 /home/yutou/ros2_ws/packages/Livox-SDK2/samples/livox_lidar_quick_start /home/yutou/ros2_ws/build/livox_sdk2 /home/yutou/ros2_ws/build/livox_sdk2/samples/livox_lidar_quick_start /home/yutou/ros2_ws/build/livox_sdk2/samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/depend
 

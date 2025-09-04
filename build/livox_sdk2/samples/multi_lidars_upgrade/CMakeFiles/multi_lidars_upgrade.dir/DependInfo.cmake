@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/yutou/ros2_ws/src/Livox-SDK2/samples/multi_lidars_upgrade/main.cpp" "samples/multi_lidars_upgrade/CMakeFiles/multi_lidars_upgrade.dir/main.cpp.o" "gcc" "samples/multi_lidars_upgrade/CMakeFiles/multi_lidars_upgrade.dir/main.cpp.o.d"
+  "/home/yutou/ros2_ws/packages/Livox-SDK2/samples/multi_lidars_upgrade/main.cpp" "samples/multi_lidars_upgrade/CMakeFiles/multi_lidars_upgrade.dir/main.cpp.o" "gcc" "samples/multi_lidars_upgrade/CMakeFiles/multi_lidars_upgrade.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.
