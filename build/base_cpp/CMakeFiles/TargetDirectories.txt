@@ -1,0 +1,10 @@
+/home/yutou/ros2_ws/build/base_cpp/CMakeFiles/uninstall.dir
+/home/yutou/ros2_ws/build/base_cpp/CMakeFiles/base_cpp_uninstall.dir
+/home/yutou/ros2_ws/build/base_cpp/CMakeFiles/publisher.dir
+/home/yutou/ros2_ws/build/base_cpp/CMakeFiles/test.dir
+/home/yutou/ros2_ws/build/base_cpp/CMakeFiles/edit_cache.dir
+/home/yutou/ros2_ws/build/base_cpp/CMakeFiles/rebuild_cache.dir
+/home/yutou/ros2_ws/build/base_cpp/CMakeFiles/list_install_components.dir
+/home/yutou/ros2_ws/build/base_cpp/CMakeFiles/install.dir
+/home/yutou/ros2_ws/build/base_cpp/CMakeFiles/install/local.dir
+/home/yutou/ros2_ws/build/base_cpp/CMakeFiles/install/strip.dir

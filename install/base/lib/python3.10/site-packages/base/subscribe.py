@@ -13,7 +13,10 @@ class Py_subscriber(Node):
         self.get_logger().info("Subscriber has been started.")
 
     def listener_callback(self, msg):
-        self.get_logger().info('I heard: "%s"' % msg.data)
+        if msg.data == "Hello, world! ":
+            self.get_logger().info("up70")
+
+        # self.get_logger().info('I heard: "%s"' % msg.data)
 
 def main(args=None):
     rclpy.init(args=args)

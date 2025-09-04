@@ -1,0 +1,18 @@
+[35m[1mConsolidate compiler generated dependencies of target publisher[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/publisher.cpp.o[0m
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:[m[K In member function ‘[01m[Kchar CppPublisher::get_key()[m[K’:
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:44:32:[m[K [01;31m[Kerror: [m[K‘[01m[KF_GETFL[m[K’ was not declared in this scope
+   44 |     oldf = fcntl(STDIN_FILENO, [01;31m[KF_GETFL[m[K, 0);
+      |                                [01;31m[K^~~~~~~[m[K
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:44:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kfcntl[m[K’ was not declared in this scope
+   44 |     oldf = [01;31m[Kfcntl[m[K(STDIN_FILENO, F_GETFL, 0);
+      |            [01;31m[K^~~~~[m[K
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:45:25:[m[K [01;31m[Kerror: [m[K‘[01m[KF_SETFL[m[K’ was not declared in this scope
+   45 |     fcntl(STDIN_FILENO, [01;31m[KF_SETFL[m[K, oldf | O_NONBLOCK);
+      |                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:45:41:[m[K [01;31m[Kerror: [m[K‘[01m[KO_NONBLOCK[m[K’ was not declared in this scope
+   45 |     fcntl(STDIN_FILENO, F_SETFL, oldf | [01;31m[KO_NONBLOCK[m[K);
+      |                                         [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/publisher.dir/build.make:76: CMakeFiles/publisher.dir/src/publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/publisher.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

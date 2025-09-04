@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target talker[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher.cpp.o[0m
+[100%] [32m[1mLinking CXX executable talker[0m
+[100%] Built target talker
+-- Install configuration: ""
+-- Installing: /home/yutou/ros2_ws/install/base_cpp/lib/base_cpp/talker
+-- Set runtime path of "/home/yutou/ros2_ws/install/base_cpp/lib/base_cpp/talker" to ""
+-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/ament_index/resource_index/package_run_dependencies/base_cpp
+-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/ament_index/resource_index/parent_prefix_path/base_cpp
+-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/environment/ament_prefix_path.sh
+-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/environment/ament_prefix_path.dsv
+-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/environment/path.sh
+-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/environment/path.dsv
+-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/local_setup.bash
+-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/local_setup.sh
+-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/local_setup.zsh
+-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/local_setup.dsv
+-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/package.dsv
+-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/ament_index/resource_index/packages/base_cpp
+-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/cmake/base_cppConfig.cmake
+-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/cmake/base_cppConfig-version.cmake
+-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/package.xml

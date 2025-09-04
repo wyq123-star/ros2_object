@@ -1,0 +1,20 @@
+[0.148s] Invoking command in '/home/yutou/ros2_ws/build/base_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yutou/ros2_ws/install/base:/opt/ros/humble /usr/bin/cmake --build /home/yutou/ros2_ws/build/base_cpp -- -j20 -l20
+[0.185s] [35m[1mConsolidate compiler generated dependencies of target publisher[0m
+[0.201s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/publisher.cpp.o[0m
+[1.604s] [01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:[m[K In member function ‘[01m[Kchar CppPublisher::get_key()[m[K’:
+[1.604s] [01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:44:32:[m[K [01;31m[Kerror: [m[K‘[01m[KF_GETFL[m[K’ was not declared in this scope
+[1.604s]    44 |     oldf = fcntl(STDIN_FILENO, [01;31m[KF_GETFL[m[K, 0);
+[1.604s]       |                                [01;31m[K^~~~~~~[m[K
+[1.607s] [01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:44:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kfcntl[m[K’ was not declared in this scope
+[1.607s]    44 |     oldf = [01;31m[Kfcntl[m[K(STDIN_FILENO, F_GETFL, 0);
+[1.607s]       |            [01;31m[K^~~~~[m[K
+[1.611s] [01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:45:25:[m[K [01;31m[Kerror: [m[K‘[01m[KF_SETFL[m[K’ was not declared in this scope
+[1.611s]    45 |     fcntl(STDIN_FILENO, [01;31m[KF_SETFL[m[K, oldf | O_NONBLOCK);
+[1.611s]       |                         [01;31m[K^~~~~~~[m[K
+[1.615s] [01m[K/home/yutou/ros2_ws/src/base_cpp/src/publisher.cpp:45:41:[m[K [01;31m[Kerror: [m[K‘[01m[KO_NONBLOCK[m[K’ was not declared in this scope
+[1.615s]    45 |     fcntl(STDIN_FILENO, F_SETFL, oldf | [01;31m[KO_NONBLOCK[m[K);
+[1.615s]       |                                         [01;31m[K^~~~~~~~~~[m[K
+[2.110s] gmake[2]: *** [CMakeFiles/publisher.dir/build.make:76: CMakeFiles/publisher.dir/src/publisher.cpp.o] Error 1
+[2.110s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/publisher.dir/all] Error 2
+[2.111s] gmake: *** [Makefile:146: all] Error 2
+[2.113s] Invoked command in '/home/yutou/ros2_ws/build/base_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yutou/ros2_ws/install/base:/opt/ros/humble /usr/bin/cmake --build /home/yutou/ros2_ws/build/base_cpp -- -j20 -l20

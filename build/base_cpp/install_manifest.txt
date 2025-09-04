@@ -1,0 +1,16 @@
+/home/yutou/ros2_ws/install/base_cpp/lib/base_cpp/publisher
+/home/yutou/ros2_ws/install/base_cpp/share/ament_index/resource_index/package_run_dependencies/base_cpp
+/home/yutou/ros2_ws/install/base_cpp/share/ament_index/resource_index/parent_prefix_path/base_cpp
+/home/yutou/ros2_ws/install/base_cpp/share/base_cpp/environment/ament_prefix_path.sh
+/home/yutou/ros2_ws/install/base_cpp/share/base_cpp/environment/ament_prefix_path.dsv
+/home/yutou/ros2_ws/install/base_cpp/share/base_cpp/environment/path.sh
+/home/yutou/ros2_ws/install/base_cpp/share/base_cpp/environment/path.dsv
+/home/yutou/ros2_ws/install/base_cpp/share/base_cpp/local_setup.bash
+/home/yutou/ros2_ws/install/base_cpp/share/base_cpp/local_setup.sh
+/home/yutou/ros2_ws/install/base_cpp/share/base_cpp/local_setup.zsh
+/home/yutou/ros2_ws/install/base_cpp/share/base_cpp/local_setup.dsv
+/home/yutou/ros2_ws/install/base_cpp/share/base_cpp/package.dsv
+/home/yutou/ros2_ws/install/base_cpp/share/ament_index/resource_index/packages/base_cpp
+/home/yutou/ros2_ws/install/base_cpp/share/base_cpp/cmake/base_cppConfig.cmake
+/home/yutou/ros2_ws/install/base_cpp/share/base_cpp/cmake/base_cppConfig-version.cmake
+/home/yutou/ros2_ws/install/base_cpp/share/base_cpp/package.xml

@@ -1,0 +1,88 @@
+[0.000000] (-) TimerEvent: {}
+[0.000301] (base) JobQueued: {'identifier': 'base', 'dependencies': OrderedDict()}
+[0.000324] (base_cpp) JobQueued: {'identifier': 'base_cpp', 'dependencies': OrderedDict()}
+[0.000852] (base) JobStarted: {'identifier': 'base'}
+[0.006616] (base_cpp) JobStarted: {'identifier': 'base_cpp'}
+[0.100006] (-) TimerEvent: {}
+[0.151958] (base_cpp) JobProgress: {'identifier': 'base_cpp', 'progress': 'cmake'}
+[0.152357] (base_cpp) JobProgress: {'identifier': 'base_cpp', 'progress': 'build'}
+[0.152760] (base_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yutou/ros2_ws/build/base_cpp', '--', '-j20', '-l20'], 'cwd': '/home/yutou/ros2_ws/build/base_cpp', 'env': OrderedDict([('USER', 'yutou'), ('HOSTNAME', 'fishros-linux'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/bin/helpers/browser.sh'), ('OMP_WAIT_POLICY', 'passive'), ('HOME', '/home/yutou'), ('TERM_PROGRAM_VERSION', '1.103.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-95ad6ae5-eaaa-4efc-9093-a4e7026cc363.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/yutou/ros2_ws/install'), ('WAYLAND_DISPLAY', 'vscode-wayland-c01439a6-e3f1-4e34-b5b0-88e97ba9084b.sock'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-1a865441-6d90-4e9c-b15e-bc8d696074bd.sock'), ('ROS_SETUP_BASH', '/opt/ros/humble/setup.bash'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/yutou/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-1a865441-6d90-4e9c-b15e-bc8d696074bd.sock","/home/yutou/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-eabcbcdacaac98d9.txt'), ('VSCODE_INJECTION', '1'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-18312a9893.sock'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-1a865441-6d90-4e9c-b15e-bc8d696074bd.sock'), ('AMENT_PREFIX_PATH', '/home/yutou/ros2_ws/install/base:/opt/ros/humble'), ('SHELL', '/bin/sh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/yutou/ros2_ws/build/base_cpp'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/yutou/ros2_ws/install/base/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/yutou/ros2_ws/install/base:/opt/ros/humble')]), 'shell': False}
+[0.185438] (base_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target talker\x1b[0m\n'}
+[0.199581] (base_cpp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/talker.dir/src/publisher.cpp.o\x1b[0m\n'}
+[0.200059] (-) TimerEvent: {}
+[0.300226] (-) TimerEvent: {}
+[0.343548] (base) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/base', 'build', '--build-base', '/home/yutou/ros2_ws/build/base/build', 'install', '--record', '/home/yutou/ros2_ws/build/base/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/yutou/ros2_ws/src/base', 'env': {'USER': 'yutou', 'HOSTNAME': 'fishros-linux', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/extensions/git/dist/askpass.sh', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'SHLVL': '1', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/bin/helpers/browser.sh', 'OMP_WAIT_POLICY': 'passive', 'HOME': '/home/yutou', 'TERM_PROGRAM_VERSION': '1.103.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-95ad6ae5-eaaa-4efc-9093-a4e7026cc363.sock', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/extensions/git/dist/askpass-main.js', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy', 'REMOTE_CONTAINERS': 'true', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'COLCON_PREFIX_PATH': '/home/yutou/ros2_ws/install', 'WAYLAND_DISPLAY': 'vscode-wayland-c01439a6-e3f1-4e34-b5b0-88e97ba9084b.sock', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-1a865441-6d90-4e9c-b15e-bc8d696074bd.sock', 'ROS_SETUP_BASH': '/opt/ros/humble/setup.bash', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/yutou/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/tmp/user/1000', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-1a865441-6d90-4e9c-b15e-bc8d696074bd.sock","/home/yutou/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-eabcbcdacaac98d9.txt', 'VSCODE_INJECTION': '1', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/tmp/user/1000/vscode-git-18312a9893.sock', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-1a865441-6d90-4e9c-b15e-bc8d696074bd.sock', 'AMENT_PREFIX_PATH': '/home/yutou/ros2_ws/install/base:/opt/ros/humble', 'SHELL': '/bin/sh', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/yutou/ros2_ws/build/base', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/home/yutou/ros2_ws/build/base/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yutou/ros2_ws/install/base/lib/python3.10/site-packages:/home/yutou/ros2_ws/install/base/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1'}, 'shell': False}
+[0.400390] (-) TimerEvent: {}
+[0.473002] (base) StdoutLine: {'line': b'running egg_info\n'}
+[0.473395] (base) StdoutLine: {'line': b'writing ../../build/base/base.egg-info/PKG-INFO\n'}
+[0.473535] (base) StdoutLine: {'line': b'writing dependency_links to ../../build/base/base.egg-info/dependency_links.txt\n'}
+[0.473623] (base) StdoutLine: {'line': b'writing entry points to ../../build/base/base.egg-info/entry_points.txt\n'}
+[0.473685] (base) StdoutLine: {'line': b'writing requirements to ../../build/base/base.egg-info/requires.txt\n'}
+[0.473733] (base) StdoutLine: {'line': b'writing top-level names to ../../build/base/base.egg-info/top_level.txt\n'}
+[0.474737] (base) StdoutLine: {'line': b"reading manifest file '../../build/base/base.egg-info/SOURCES.txt'\n"}
+[0.475164] (base) StdoutLine: {'line': b"writing manifest file '../../build/base/base.egg-info/SOURCES.txt'\n"}
+[0.475213] (base) StdoutLine: {'line': b'running build\n'}
+[0.475259] (base) StdoutLine: {'line': b'running build_py\n'}
+[0.475468] (base) StdoutLine: {'line': b'running install\n'}
+[0.475662] (base) StdoutLine: {'line': b'running install_lib\n'}
+[0.476368] (base) StdoutLine: {'line': b'running install_data\n'}
+[0.476419] (base) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.477621] (base) StdoutLine: {'line': b"removing '/home/yutou/ros2_ws/install/base/lib/python3.10/site-packages/base-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.477797] (base) StdoutLine: {'line': b'Copying ../../build/base/base.egg-info to /home/yutou/ros2_ws/install/base/lib/python3.10/site-packages/base-0.0.0-py3.10.egg-info\n'}
+[0.478159] (base) StdoutLine: {'line': b'running install_scripts\n'}
+[0.492054] (base) StdoutLine: {'line': b'Installing subscriber script to /home/yutou/ros2_ws/install/base/lib/base\n'}
+[0.492227] (base) StdoutLine: {'line': b"writing list of installed files to '/home/yutou/ros2_ws/build/base/install.log'\n"}
+[0.500563] (-) TimerEvent: {}
+[0.506582] (base) CommandEnded: {'returncode': 0}
+[0.513857] (base) JobEnded: {'identifier': 'base', 'rc': 0}
+[0.600727] (-) TimerEvent: {}
+[0.701054] (-) TimerEvent: {}
+[0.801317] (-) TimerEvent: {}
+[0.901625] (-) TimerEvent: {}
+[1.001964] (-) TimerEvent: {}
+[1.102305] (-) TimerEvent: {}
+[1.202657] (-) TimerEvent: {}
+[1.303032] (-) TimerEvent: {}
+[1.403374] (-) TimerEvent: {}
+[1.503728] (-) TimerEvent: {}
+[1.604096] (-) TimerEvent: {}
+[1.704442] (-) TimerEvent: {}
+[1.804768] (-) TimerEvent: {}
+[1.905107] (-) TimerEvent: {}
+[2.005445] (-) TimerEvent: {}
+[2.105780] (-) TimerEvent: {}
+[2.206120] (-) TimerEvent: {}
+[2.306443] (-) TimerEvent: {}
+[2.406747] (-) TimerEvent: {}
+[2.507002] (-) TimerEvent: {}
+[2.607324] (-) TimerEvent: {}
+[2.707599] (-) TimerEvent: {}
+[2.807930] (-) TimerEvent: {}
+[2.815951] (base_cpp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable talker\x1b[0m\n'}
+[2.908110] (-) TimerEvent: {}
+[2.990610] (base_cpp) StdoutLine: {'line': b'[100%] Built target talker\n'}
+[2.999799] (base_cpp) CommandEnded: {'returncode': 0}
+[3.000641] (base_cpp) JobProgress: {'identifier': 'base_cpp', 'progress': 'install'}
+[3.008926] (base_cpp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yutou/ros2_ws/build/base_cpp'], 'cwd': '/home/yutou/ros2_ws/build/base_cpp', 'env': OrderedDict([('USER', 'yutou'), ('HOSTNAME', 'fishros-linux'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/bin/helpers/browser.sh'), ('OMP_WAIT_POLICY', 'passive'), ('HOME', '/home/yutou'), ('TERM_PROGRAM_VERSION', '1.103.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-95ad6ae5-eaaa-4efc-9093-a4e7026cc363.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/yutou/ros2_ws/install'), ('WAYLAND_DISPLAY', 'vscode-wayland-c01439a6-e3f1-4e34-b5b0-88e97ba9084b.sock'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-1a865441-6d90-4e9c-b15e-bc8d696074bd.sock'), ('ROS_SETUP_BASH', '/opt/ros/humble/setup.bash'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/360a4e4fd251bfce169a4ddf857c7d25d1ad40da/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/yutou/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-1a865441-6d90-4e9c-b15e-bc8d696074bd.sock","/home/yutou/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/yutou/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-eabcbcdacaac98d9.txt'), ('VSCODE_INJECTION', '1'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-18312a9893.sock'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-1a865441-6d90-4e9c-b15e-bc8d696074bd.sock'), ('AMENT_PREFIX_PATH', '/home/yutou/ros2_ws/install/base:/opt/ros/humble'), ('SHELL', '/bin/sh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/yutou/ros2_ws/build/base_cpp'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/yutou/ros2_ws/install/base/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/yutou/ros2_ws/install/base:/opt/ros/humble')]), 'shell': False}
+[3.009599] (-) TimerEvent: {}
+[3.017560] (base_cpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.017817] (base_cpp) StdoutLine: {'line': b'-- Installing: /home/yutou/ros2_ws/install/base_cpp/lib/base_cpp/talker\n'}
+[3.018608] (base_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/yutou/ros2_ws/install/base_cpp/lib/base_cpp/talker" to ""\n'}
+[3.018794] (base_cpp) StdoutLine: {'line': b'-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/ament_index/resource_index/package_run_dependencies/base_cpp\n'}
+[3.018947] (base_cpp) StdoutLine: {'line': b'-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/ament_index/resource_index/parent_prefix_path/base_cpp\n'}
+[3.019078] (base_cpp) StdoutLine: {'line': b'-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/environment/ament_prefix_path.sh\n'}
+[3.019214] (base_cpp) StdoutLine: {'line': b'-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/environment/ament_prefix_path.dsv\n'}
+[3.019437] (base_cpp) StdoutLine: {'line': b'-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/environment/path.sh\n'}
+[3.019609] (base_cpp) StdoutLine: {'line': b'-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/environment/path.dsv\n'}
+[3.019758] (base_cpp) StdoutLine: {'line': b'-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/local_setup.bash\n'}
+[3.019890] (base_cpp) StdoutLine: {'line': b'-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/local_setup.sh\n'}
+[3.020015] (base_cpp) StdoutLine: {'line': b'-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/local_setup.zsh\n'}
+[3.020136] (base_cpp) StdoutLine: {'line': b'-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/local_setup.dsv\n'}
+[3.020259] (base_cpp) StdoutLine: {'line': b'-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/package.dsv\n'}
+[3.020358] (base_cpp) StdoutLine: {'line': b'-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/ament_index/resource_index/packages/base_cpp\n'}
+[3.020458] (base_cpp) StdoutLine: {'line': b'-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/cmake/base_cppConfig.cmake\n'}
+[3.020556] (base_cpp) StdoutLine: {'line': b'-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/cmake/base_cppConfig-version.cmake\n'}
+[3.020664] (base_cpp) StdoutLine: {'line': b'-- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/package.xml\n'}
+[3.022027] (base_cpp) CommandEnded: {'returncode': 0}
+[3.039956] (base_cpp) JobEnded: {'identifier': 'base_cpp', 'rc': 0}
+[3.040604] (-) EventReactorShutdown: {}

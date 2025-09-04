@@ -1,0 +1,26 @@
+[0.154s] Invoking command in '/home/yutou/ros2_ws/build/base_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yutou/ros2_ws/install/base:/opt/ros/humble /usr/bin/cmake --build /home/yutou/ros2_ws/build/base_cpp -- -j20 -l20
+[0.188s] [35m[1mConsolidate compiler generated dependencies of target publisher[0m
+[0.201s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/publisher.cpp.o[0m
+[2.768s] [100%] [32m[1mLinking CXX executable publisher[0m
+[2.889s] [100%] Built target publisher
+[2.899s] Invoked command in '/home/yutou/ros2_ws/build/base_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yutou/ros2_ws/install/base:/opt/ros/humble /usr/bin/cmake --build /home/yutou/ros2_ws/build/base_cpp -- -j20 -l20
+[2.909s] Invoking command in '/home/yutou/ros2_ws/build/base_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yutou/ros2_ws/install/base:/opt/ros/humble /usr/bin/cmake --install /home/yutou/ros2_ws/build/base_cpp
+[2.918s] -- Install configuration: ""
+[2.918s] -- Installing: /home/yutou/ros2_ws/install/base_cpp/lib/base_cpp/publisher
+[2.919s] -- Set runtime path of "/home/yutou/ros2_ws/install/base_cpp/lib/base_cpp/publisher" to ""
+[2.920s] -- Up-to-date: /home/yutou/ros2_ws/install/base_cpp/share/ament_index/resource_index/package_run_dependencies/base_cpp
+[2.920s] -- Up-to-date: /home/yutou/ros2_ws/install/base_cpp/share/ament_index/resource_index/parent_prefix_path/base_cpp
+[2.920s] -- Up-to-date: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/environment/ament_prefix_path.sh
+[2.920s] -- Up-to-date: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/environment/ament_prefix_path.dsv
+[2.920s] -- Up-to-date: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/environment/path.sh
+[2.921s] -- Up-to-date: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/environment/path.dsv
+[2.921s] -- Up-to-date: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/local_setup.bash
+[2.921s] -- Up-to-date: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/local_setup.sh
+[2.921s] -- Up-to-date: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/local_setup.zsh
+[2.921s] -- Up-to-date: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/local_setup.dsv
+[2.921s] -- Installing: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/package.dsv
+[2.921s] -- Up-to-date: /home/yutou/ros2_ws/install/base_cpp/share/ament_index/resource_index/packages/base_cpp
+[2.922s] -- Up-to-date: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/cmake/base_cppConfig.cmake
+[2.922s] -- Up-to-date: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/cmake/base_cppConfig-version.cmake
+[2.922s] -- Up-to-date: /home/yutou/ros2_ws/install/base_cpp/share/base_cpp/package.xml
+[2.924s] Invoked command in '/home/yutou/ros2_ws/build/base_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yutou/ros2_ws/install/base:/opt/ros/humble /usr/bin/cmake --install /home/yutou/ros2_ws/build/base_cpp

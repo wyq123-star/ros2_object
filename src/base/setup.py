@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             "subscriber = base.subscribe:main",
+            # "publisher = base.publish:main",
         ],
     },
 )
