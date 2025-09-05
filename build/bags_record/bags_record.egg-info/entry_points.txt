@@ -1,0 +1,3 @@
+[console_scripts]
+bag_recorder = bags_record.bag_recorder:main
+
