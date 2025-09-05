@@ -46,8 +46,9 @@ RUN groupadd --gid $USER_GID $USERNAME && \
     useradd --uid $USER_UID --gid $USER_GID -m $USERNAME && \
     apt-get update && \
     apt-get install -y sudo && \
-    echo "$USERNAME ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
-
+    echo "$USERNAME ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
+    usermod -a -G dialout $USERNAME
+    # usermod -a -G dialout $USERNAME
 # ------------------------------
 # 安装 Fisher 和 bass（在用户目录下）
 # ------------------------------
