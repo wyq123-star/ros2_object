@@ -1,4 +1,4 @@
-docker build -t yutou/ros2_container:latest .
+docker build -t yutou/ros2_container:part1 .
 
 docker image prune -f  # 强制清理none镜像
 

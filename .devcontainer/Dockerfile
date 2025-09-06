@@ -11,15 +11,15 @@ ARG USER_GID=$USER_UID
 # ------------------------------
 RUN apt-get update && \
     apt-get install -y \
-        wget \
-        ros-humble-nav2-bringup \
-        ros-humble-gazebo-ros-pkgs \
-        ros-humble-cartographer \
-        ros-humble-cartographer-ros \
-        gazebo \
-        libgazebo-dev \
-        ros-$ROS_DISTRO-joint-state-publisher-gui \
-        ros-$ROS_DISTRO-robot-state-publisher && \
+        wget && \
+        # ros-humble-nav2-bringup \
+        # ros-humble-gazebo-ros-pkgs \
+        # ros-humble-cartographer \
+        # ros-humble-cartographer-ros \
+        # gazebo \
+        # libgazebo-dev \
+        # ros-$ROS_DISTRO-joint-state-publisher-gui \
+        # ros-$ROS_DISTRO-robot-state-publisher && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 

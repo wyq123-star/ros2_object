@@ -4,7 +4,7 @@ services:
     # build:
     #   context: .  # 当前目录为上下文
     #   dockerfile: ./Dockerfile
-    image: yutou/ros2_container:latest  # 替换为你的镜像名
+    image: yutou/ros2_container:part1  # 替换为你的镜像名
     container_name: ros2-container
 
     environment:
