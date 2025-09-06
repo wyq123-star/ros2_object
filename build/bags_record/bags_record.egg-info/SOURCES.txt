@@ -9,7 +9,9 @@ setup.py
 ../../build/bags_record/bags_record.egg-info/top_level.txt
 ../../build/bags_record/bags_record.egg-info/zip-safe
 bags_record/__init__.py
-bags_record/bag_recorder.py
+bags_record/imu_recorder.py
+bags_record/lidar_recorder.py
+bags_record/mutli_recorder.py
 resource/bags_record
 test/test_copyright.py
 test/test_flake8.py

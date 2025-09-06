@@ -20,7 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'bag_recorder = bags_record.bag_recorder:main',
+            'imu_recorder = bags_record.imu_recorder:main',
+            'lidar_recorder = bags_record.lidar_recorder:main',
+            'multi_recorder = bags_record.mutli_recorder:main',
         ],
     },
 )
