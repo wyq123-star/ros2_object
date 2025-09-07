@@ -11,7 +11,8 @@ def generate_launch_description():
     #=============================1.定位到包的地址=============================================================
     my_navigation2_dir = get_package_share_directory('navigation2')
     nav2_bringup_dir = get_package_share_directory('nav2_bringup')
-    
+    mid360_launch_dir = get_package_share_directory('livox_ros_driver2')
+    ms200_launch_dir = get_package_share_directory('oradar_lidar')
     
     #=============================2.声明参数，获取配置文件路径===================================================
     # use_sim_time 这里要设置成true,因为gazebo是仿真环境，其时间是通过/clock话题获取，而不是系统时间
@@ -26,8 +27,17 @@ def generate_launch_description():
             launch_arguments={
                 'map': map_yaml_path,
                 'use_sim_time': use_sim_time,
-                'params_file': nav2_param_path}.items(),
-        )
+                'params_file': nav2_param_path}.items(),)
+
+    mid360_launch = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([mid360_launch_dir,'/launch_ROS2','/rviz_MID360_launch.py']),
+                launch_arguments={'use_sim_time': use_sim_time}.items(),)
+    
+
+    ms200_launch = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([ms200_launch_dir,'/launch','/ms200_scan_view.launch.py']),
+                launch_arguments={'use_sim_time': use_sim_time}.items(),)
+
     rviz_node =  Node(
             package='rviz2',
             executable='rviz2',
@@ -36,4 +46,10 @@ def generate_launch_description():
             parameters=[{'use_sim_time': use_sim_time}],
             output='screen')
     
-    return LaunchDescription([nav2_bringup_launch,rviz_node])
+    
+    return LaunchDescription([
+        nav2_bringup_launch,
+        rviz_node,
+        mid360_launch,
+        ms200_launch,
+        ])
