@@ -71,7 +71,9 @@ ENV ROS_SETUP_BASH="/opt/ros/humble/setup.bash"
 
 # 为bash用户自动加载ROS环境
 RUN echo "source $ROS_SETUP_BASH" >> /home/$USERNAME/.bashrc && \
-    echo "source /home/yutou/ros2_ws/install/setup.bash" >> /home/$USERNAME/.bashrc
+    echo "source /home/yutou/ros2_ws/install/setup.bash" >> /home/$USERNAME/.bashrc && \
+    echo "source /home/yutou/packages/lidar_ros_ws/install/setup.bash" >> /home/$USERNAME/.bashrc && \
+    echo "source /home/yutou/packages/ws_livox/install/local_setup.bash" >> /home/$USERNAME/.bashrc
 
 # # 为fish用户配置ROS环境（可选）
 RUN echo 'bass source /opt/ros/humble/setup.bash' >> /home/$USERNAME/.config/fish/config.fish && \
