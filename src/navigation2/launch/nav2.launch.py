@@ -37,6 +37,10 @@ def generate_launch_description():
     ms200_launch = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([ms200_launch_dir,'/launch','/ms200_scan_view.launch.py']),
                 launch_arguments={'use_sim_time': use_sim_time}.items(),)
+    
+    tf_launch = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([my_navigation2_dir,'/launch','/tf.launch.py']),
+                launch_arguments={'use_sim_time': use_sim_time}.items(),)
 
     rviz_node =  Node(
             package='rviz2',
@@ -52,4 +56,5 @@ def generate_launch_description():
         rviz_node,
         mid360_launch,
         ms200_launch,
+        # tf_launch,
         ])
