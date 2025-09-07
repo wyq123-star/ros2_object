@@ -26,7 +26,8 @@ class MultiBagRecorder(Node):
         self.writer.open(storage_options, converter_options)
 
         imu_topic_info = rosbag2_py.TopicMetadata(
-            name='imu/data_raw',
+            # name='imu/data_raw',
+            name='livox/imu',
             type='sensor_msgs/msg/Imu',
             serialization_format='cdr')
         self.writer.create_topic(imu_topic_info)
@@ -39,7 +40,8 @@ class MultiBagRecorder(Node):
 
         self.imu_subscription = self.create_subscription(
             Imu,
-            'imu/data_raw',
+            # 'imu/data_raw', # 外接imu
+            'livox/imu', # livox自带imu
             self.imu_callback,
             10)
         
@@ -54,7 +56,8 @@ class MultiBagRecorder(Node):
 
     def imu_callback(self, msg):
         self.writer.write(
-            'imu/data_raw',
+            # 'imu/data_raw',
+            'livox/imu',
             serialize_message(msg),
             self.get_clock().now().nanoseconds)
 
