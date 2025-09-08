@@ -4,6 +4,7 @@ from rclpy.serialization import serialize_message
 import rosbag2_py
 from sensor_msgs.msg import Imu
 from sensor_msgs.msg import PointCloud2
+from livox_ros_driver2.msg import CustomMsg  # 注意是 livox_ros_driver2，不是 livox_ros_driver
 
 class MultiBagRecorder(Node):
     def __init__(self):
@@ -34,7 +35,8 @@ class MultiBagRecorder(Node):
 
         lidar_topic_info = rosbag2_py.TopicMetadata(
             name='livox/lidar',
-            type='sensor_msgs/msg/PointCloud2',
+            # type='sensor_msgs/msg/PointCloud2',
+            type='livox_ros_driver/CustomMsg',
             serialization_format='cdr')
         self.writer.create_topic(lidar_topic_info)
 
@@ -46,7 +48,7 @@ class MultiBagRecorder(Node):
             10)
         
         self.lidar_subscription = self.create_subscription(
-            PointCloud2,
+            CustomMsg,
             'livox/lidar',
             self.lidar_callback,
             10)

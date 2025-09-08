@@ -13,12 +13,14 @@ RUN apt-get update && \
     apt-get install -y \
         wget \
         ros-humble-nav2-bringup \
-        ros-humble-gazebo-ros-pkgs \
-        ros-humble-cartographer \
-        ros-humble-cartographer-ros \
+        # ros-humble-gazebo-ros-pkgs \
+        # ros-humble-cartographer \
+        # ros-humble-cartographer-ros \
+        # ros-noetic-ros-core  \
+        # ros-humble-ros1-bridge \
         pip \
-        gazebo \
-        libgazebo-dev \
+        # gazebo \
+        # libgazebo-dev \
         ros-$ROS_DISTRO-joint-state-publisher-gui \
         ros-$ROS_DISTRO-robot-state-publisher && \
     apt-get clean && \
@@ -35,7 +37,8 @@ RUN apt-get update && \
         ros-humble-foxglove-bridge \
         nautilus \
         curl && \  
-    pip install pyserial && \
+    pip install pyserial \
+    rosbags && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 

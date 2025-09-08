@@ -1,1 +1,1 @@
-rclpy:rosbag2_py:sensor_msgs:std_msgs
+livox_ros_driver2:rclpy:rosbag2_py:sensor_msgs:std_msgs

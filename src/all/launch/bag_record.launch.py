@@ -30,7 +30,8 @@ def generate_launch_description():
             os.path.join(
                 get_package_share_directory('livox_ros_driver2'), # 替换为你的包名
                 'launch_ROS2',
-                'rviz_MID360_launch.py' # 替换为你的launch文件名
+                # 'rviz_MID360_launch.py' # 替换为你的launch文件名
+                'msg_MID360_launch.py' # 替换为你的launch文件名
             )
         )
     )
