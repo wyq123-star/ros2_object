@@ -5,6 +5,7 @@ import rosbag2_py
 from sensor_msgs.msg import Imu
 from sensor_msgs.msg import PointCloud2
 from livox_ros_driver2.msg import CustomMsg  # 注意是 livox_ros_driver2，不是 livox_ros_driver
+from launch.substitutions import LaunchConfiguration
 
 class MultiBagRecorder(Node):
     def __init__(self):
@@ -28,7 +29,8 @@ class MultiBagRecorder(Node):
 
         imu_topic_info = rosbag2_py.TopicMetadata(
             # name='imu/data_raw',
-            name='livox/imu',
+            # name='livox/imu',
+            # name='rslidar_imu_data',
             type='sensor_msgs/msg/Imu',
             serialization_format='cdr')
         self.writer.create_topic(imu_topic_info)
@@ -42,6 +44,7 @@ class MultiBagRecorder(Node):
 
         self.imu_subscription = self.create_subscription(
             Imu,
+            #'rslidar_points'
             # 'imu/data_raw', # 外接imu
             'livox/imu', # livox自带imu
             self.imu_callback,

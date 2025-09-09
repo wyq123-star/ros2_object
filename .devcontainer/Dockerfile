@@ -57,10 +57,13 @@ ENV ROS2_DISTRO=humble
 ENV ROS1_DISTRO=noetic
 ENV ROS2_SETUP_BASH="/opt/ros/humble/setup.bash"
 ENV ROS1_SETUP_BASH="/opt/ros/noetic/setup.bash"
-ENV LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+# ENV LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+ENV ROBOSENSE_AIRY_BASH="~/ros2_ws/packages/AIRY/install/setup.bash"
 
 # # 为bash用户自动加载ROS环境
-# RUN echo "source $ROS_SETUP_BASH" >> /home/$USERNAME/.bashrc && \
+RUN echo "source $ROS2_SETUP_BASH" >> /home/$USERNAME/.bashrc && \
+    # echo "source $ROS1_SETUP_BASH" >> /home/$USERNAME/.bashrc && \
+    echo "source $ROBOSENSE_AIRY_BASH" >> /home/$USERNAME/.bashrc
 #     echo "source /home/yutou/ros2_ws/install/setup.bash" >> /home/$USERNAME/.bashrc && \
 #     echo "source /home/yutou/packages/lidar_ros_ws/install/setup.bash" >> /home/$USERNAME/.bashrc && \
 #     echo "source /home/yutou/packages/ws_livox/install/local_setup.bash" >> /home/$USERNAME/.bashrc
