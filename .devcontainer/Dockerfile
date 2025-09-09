@@ -20,6 +20,7 @@ RUN apt-get update && \
         fish \
         gedit \
         ros-humble-rqt-tf-tree \
+        ros-humble-rmw-cyclonedds-cpp \
         ros-humble-foxglove-bridge \
         nautilus \
         curl \
@@ -56,6 +57,7 @@ ENV ROS2_DISTRO=humble
 ENV ROS1_DISTRO=noetic
 ENV ROS2_SETUP_BASH="/opt/ros/humble/setup.bash"
 ENV ROS1_SETUP_BASH="/opt/ros/noetic/setup.bash"
+ENV LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
 # # 为bash用户自动加载ROS环境
 # RUN echo "source $ROS_SETUP_BASH" >> /home/$USERNAME/.bashrc && \
