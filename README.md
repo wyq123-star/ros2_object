@@ -5,3 +5,7 @@
 ```
 sudo ldconfig
 ```
+
+神人airy imu坐标系完全对不上，下图是错误示范 z反向，xy互换
+![alt text](image.png)
+

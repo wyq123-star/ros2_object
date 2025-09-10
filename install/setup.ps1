@@ -23,8 +23,7 @@ function _colcon_prefix_chain_powershell_source_script {
 
 # source chained prefixes
 _colcon_prefix_chain_powershell_source_script "/opt/ros/humble\local_setup.ps1"
-_colcon_prefix_chain_powershell_source_script "/home/yutou/ros2_ws/packages/lidar_ros_ws/install\local_setup.ps1"
-_colcon_prefix_chain_powershell_source_script "/home/yutou/ros2_ws/packages/ws_livox/install\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/yutou/ros2_ws/packages/AIRY/install\local_setup.ps1"
 
 # source this prefix
 $env:COLCON_CURRENT_PREFIX=(Split-Path $PSCommandPath -Parent)

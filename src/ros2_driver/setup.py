@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             "imu_node = ros2_driver.imu_node:main",
+            "imu_transformed = ros2_driver.imu_transformed:main",
         ],
     },
 )
