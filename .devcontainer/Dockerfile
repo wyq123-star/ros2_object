@@ -7,9 +7,9 @@ ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
 # 添加 Autolabor 的 ROS Noetic 源
-RUN echo "deb [trusted=yes arch=amd64] http://deb.repo.autolabor.com.cn jammy main" | sudo tee /etc/apt/sources.list.d/autolabor.list && \
-    sudo apt-get update && \
-    sudo apt-get install -y ros-noetic-autolabor
+# RUN echo "deb [trusted=yes arch=amd64] http://deb.repo.autolabor.com.cn jammy main" | sudo tee /etc/apt/sources.list.d/autolabor.list && \
+#     sudo apt-get update && \
+#     sudo apt-get install -y ros-noetic-autolabor
 
 RUN apt-get update && \
     apt-get install -y \
