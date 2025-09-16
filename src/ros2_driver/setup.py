@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             "imu_node = ros2_driver.imu_node:main",
             "imu_transformed = ros2_driver.imu_transformed:main",
+            "lidar_convert = ros2_driver.lidar_convert:main"
         ],
     },
 )

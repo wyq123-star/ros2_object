@@ -6,10 +6,10 @@ ARG USERNAME=yutou
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
-# 添加 Autolabor 的 ROS Noetic 源
-# RUN echo "deb [trusted=yes arch=amd64] http://deb.repo.autolabor.com.cn jammy main" | sudo tee /etc/apt/sources.list.d/autolabor.list && \
-#     sudo apt-get update && \
-#     sudo apt-get install -y ros-noetic-autolabor
+
+RUN echo "deb [trusted=yes arch=amd64] http://deb.repo.autolabor.com.cn jammy main" | sudo tee /etc/apt/sources.list.d/autolabor.list && \
+    sudo apt-get update && \
+    sudo apt-get install -y ros-noetic-autolabor
 
 RUN apt-get update && \
     apt-get install -y \
@@ -25,6 +25,7 @@ RUN apt-get update && \
         nautilus \
         curl \
         sudo \
+        libpcap-dev \
         pip && \
         pip install pyserial \
         rosbags && \
@@ -62,9 +63,9 @@ ENV ROBOSENSE_AIRY_BASH="~/ros2_ws/packages/AIRY/install/setup.bash"
 ENV ROS1_BRIDGE_BASH="~/ros2_ws/packages/ros_bridge_ws/install/setup.bash"
 
 # # 为bash用户自动加载ROS环境
-RUN echo "source $ROS2_SETUP_BASH" >> /home/$USERNAME/.bashrc 
+# RUN echo "source $ROS2_SETUP_BASH" >> /home/$USERNAME/.bashrc && \
     # echo "source $ROS1_SETUP_BASH" >> /home/$USERNAME/.bashrc && \
-    # echo "source $ROBOSENSE_AIRY_BASH" >> /home/$USERNAME/.bashrc 
+    # echo "source $ROBOSENSE_AIRY_BASH" >> /home/$USERNAME/.bashrc && \
     # echo "source $ROS1_BRIDGE_BASH" >> /home/$USERNAME/.bashrc 
 #     echo "source /home/yutou/ros2_ws/install/setup.bash" >> /home/$USERNAME/.bashrc && \
 #     echo "source /home/yutou/packages/lidar_ros_ws/install/setup.bash" >> /home/$USERNAME/.bashrc && \
