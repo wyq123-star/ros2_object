@@ -41,17 +41,17 @@ def generate_launch_description():
   )
 
   # base_link to laser_frame tf node - 这个需要修改
-  base_link_to_laser_tf_node = Node(
-    package='tf2_ros',
-    executable='static_transform_publisher', # 修改1: 参数名改为 executable
-    name='base_link_to_base_laser',          # 修改2: 参数名改为 name
-    arguments=['0', '0', '0.18', '0', '0', '0', 'base_link', 'laser_frame']
-  )
+  # base_link_to_laser_tf_node = Node(
+  #   package='tf2_ros',
+  #   executable='static_transform_publisher', # 修改1: 参数名改为 executable
+  #   name='base_link_to_base_laser',          # 修改2: 参数名改为 name
+  #   arguments=['0', '0', '0.18', '0', '0', '0', 'base_link', 'laser_frame']
+  # )
 
   # Define LaunchDescription variable
   ord = LaunchDescription()
 
   ord.add_action(ordlidar_node)
-  ord.add_action(base_link_to_laser_tf_node)
+  # ord.add_action(base_link_to_laser_tf_node)
 
   return ord
